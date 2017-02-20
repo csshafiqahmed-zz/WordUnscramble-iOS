@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10507BAD1DB5B20100D91147 /* items.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10507BAC1DB5B20100D91147 /* items.txt */; };
 		10DD00221D8A20070076D3BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00211D8A20070076D3BD /* AppDelegate.swift */; };
 		10DD00241D8A20070076D3BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00231D8A20070076D3BD /* ViewController.swift */; };
 		10DD00271D8A20070076D3BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DD00251D8A20070076D3BD /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		10DD002F1D8A20070076D3BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DD002D1D8A20070076D3BD /* LaunchScreen.storyboard */; };
 		10DD003A1D8A20070076D3BD /* Word_UnscramblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00391D8A20070076D3BD /* Word_UnscramblerTests.swift */; };
 		10DD00451D8A20070076D3BD /* Word_UnscramblerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */; };
+		10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E18DC21DB1DF52004F6491 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10507BAC1DB5B20100D91147 /* items.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = items.txt; sourceTree = "<group>"; };
 		10DD001E1D8A20070076D3BD /* Word Unscrambler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Unscrambler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DD00211D8A20070076D3BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10DD00231D8A20070076D3BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		10DD00401D8A20070076D3BD /* Word UnscramblerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word UnscramblerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_UnscramblerUITests.swift; sourceTree = "<group>"; };
 		10DD00461D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E18DC21DB1DF52004F6491 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 		10DD00201D8A20070076D3BD /* Word Unscrambler */ = {
 			isa = PBXGroup;
 			children = (
+				10507BAC1DB5B20100D91147 /* items.txt */,
 				10DD00211D8A20070076D3BD /* AppDelegate.swift */,
 				10DD00231D8A20070076D3BD /* ViewController.swift */,
+				10E18DC21DB1DF52004F6491 /* WebViewController.swift */,
 				10DD00251D8A20070076D3BD /* Main.storyboard */,
 				10DD002B1D8A20070076D3BD /* Assets.xcassets */,
 				10DD002D1D8A20070076D3BD /* LaunchScreen.storyboard */,
@@ -191,21 +197,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Satish Boggarapu";
 				TargetAttributes = {
 					10DD001D1D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = LA6UDL34DX;
+						DevelopmentTeam = TEGLEE3UYA;
+						LastSwiftMigration = 0800;
 					};
 					10DD00341D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = LA6UDL34DX;
+						DevelopmentTeam = TEGLEE3UYA;
+						LastSwiftMigration = 0800;
 						TestTargetID = 10DD001D1D8A20070076D3BD;
 					};
 					10DD003F1D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = LA6UDL34DX;
+						DevelopmentTeam = TEGLEE3UYA;
+						LastSwiftMigration = 0800;
 						TestTargetID = 10DD001D1D8A20070076D3BD;
 					};
 				};
@@ -236,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10DD002F1D8A20070076D3BD /* LaunchScreen.storyboard in Resources */,
+				10507BAD1DB5B20100D91147 /* items.txt in Resources */,
 				10DD002C1D8A20070076D3BD /* Assets.xcassets in Resources */,
 				10DD00271D8A20070076D3BD /* Main.storyboard in Resources */,
 			);
@@ -265,6 +275,7 @@
 				10DD00241D8A20070076D3BD /* ViewController.swift in Sources */,
 				10DD00221D8A20070076D3BD /* AppDelegate.swift in Sources */,
 				10DD002A1D8A20070076D3BD /* Word_Unscrambler.xcdatamodeld in Sources */,
+				10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,13 +344,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Satish Boggarapu (NM484VC4JK)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -359,6 +373,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e5cb3ff2-8fdc-4ac2-a37b-81d2aa36ef4a";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,13 +394,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Satish Boggarapu (TEGLEE3UYA)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -398,7 +416,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "e5cb3ff2-8fdc-4ac2-a37b-81d2aa36ef4a";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -408,10 +428,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				INFOPLIST_FILE = "Word Unscrambler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-Unscrambler";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.satishboggarapu.Word-Unscrambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -419,10 +441,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				INFOPLIST_FILE = "Word Unscrambler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-Unscrambler";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.satishboggarapu.Word-Unscrambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -434,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Word Unscrambler.app/Word Unscrambler";
 			};
 			name = Debug;
@@ -446,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Word Unscrambler.app/Word Unscrambler";
 			};
 			name = Release;
@@ -457,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Word Unscrambler";
 			};
 			name = Debug;
@@ -468,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Word Unscrambler";
 			};
 			name = Release;
@@ -491,6 +519,7 @@
 				10DD004B1D8A20070076D3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10DD004C1D8A20070076D3BD /* Build configuration list for PBXNativeTarget "Word UnscramblerTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +528,7 @@
 				10DD004E1D8A20070076D3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		10DD004F1D8A20070076D3BD /* Build configuration list for PBXNativeTarget "Word UnscramblerUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +537,7 @@
 				10DD00511D8A20070076D3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
