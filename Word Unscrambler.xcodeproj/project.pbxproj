@@ -8,15 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		10507BAD1DB5B20100D91147 /* items.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10507BAC1DB5B20100D91147 /* items.txt */; };
+		106EADA320646E55008E41B0 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106EADA220646E55008E41B0 /* Combinations.swift */; };
+		106EADA5206478D4008E41B0 /* WordUnscramblerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106EADA4206478D4008E41B0 /* WordUnscramblerViewController.swift */; };
+		10CD01D42072894600152C68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10CD01D32072894600152C68 /* GoogleService-Info.plist */; };
 		10DD00221D8A20070076D3BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00211D8A20070076D3BD /* AppDelegate.swift */; };
-		10DD00241D8A20070076D3BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00231D8A20070076D3BD /* ViewController.swift */; };
 		10DD00271D8A20070076D3BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DD00251D8A20070076D3BD /* Main.storyboard */; };
-		10DD002A1D8A20070076D3BD /* Word_Unscrambler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00281D8A20070076D3BD /* Word_Unscrambler.xcdatamodeld */; };
 		10DD002C1D8A20070076D3BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DD002B1D8A20070076D3BD /* Assets.xcassets */; };
 		10DD002F1D8A20070076D3BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DD002D1D8A20070076D3BD /* LaunchScreen.storyboard */; };
 		10DD003A1D8A20070076D3BD /* Word_UnscramblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00391D8A20070076D3BD /* Word_UnscramblerTests.swift */; };
 		10DD00451D8A20070076D3BD /* Word_UnscramblerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */; };
 		10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E18DC21DB1DF52004F6491 /* WebViewController.swift */; };
+		8597D5461A571913E4A69608 /* Pods_Word_UnscramblerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AF3B9DCD4A51E22383A12 /* Pods_Word_UnscramblerUITests.framework */; };
+		A3F1C15A89C83607F9C00DF8 /* Pods_Word_UnscramblerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72DD8FC65ADB0ACC9EA275B /* Pods_Word_UnscramblerTests.framework */; };
+		BCDFCD701FCD4AE6E1E1070A /* Pods_Word_Unscrambler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE16E75A5D661CB5317EB54 /* Pods_Word_Unscrambler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02CCE1A0D854DAC0F2540E68 /* Pods-Word UnscramblerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests.release.xcconfig"; sourceTree = "<group>"; };
 		10507BAC1DB5B20100D91147 /* items.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = items.txt; sourceTree = "<group>"; };
+		106EADA220646E55008E41B0 /* Combinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
+		106EADA4206478D4008E41B0 /* WordUnscramblerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordUnscramblerViewController.swift; sourceTree = "<group>"; };
+		10CD01D32072894600152C68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		10DD001E1D8A20070076D3BD /* Word Unscrambler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Unscrambler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DD00211D8A20070076D3BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10DD00231D8A20070076D3BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10DD00261D8A20070076D3BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		10DD00291D8A20070076D3BD /* Word_Unscrambler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Word_Unscrambler.xcdatamodel; sourceTree = "<group>"; };
 		10DD002B1D8A20070076D3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10DD002E1D8A20070076D3BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10DD00301D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +59,14 @@
 		10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_UnscramblerUITests.swift; sourceTree = "<group>"; };
 		10DD00461D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10E18DC21DB1DF52004F6491 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3A7C33669F97B24621C5A6C6 /* Pods-Word UnscramblerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6DB28EE393E853AA144B2A6A /* Pods-Word Unscrambler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Unscrambler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.debug.xcconfig"; sourceTree = "<group>"; };
+		7AAEC2551AF72120C378539A /* Pods-Word Unscrambler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Unscrambler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.release.xcconfig"; sourceTree = "<group>"; };
+		9DA310760039FD5D69FA083E /* Pods-Word UnscramblerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACE16E75A5D661CB5317EB54 /* Pods_Word_Unscrambler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Word_Unscrambler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61AF3B9DCD4A51E22383A12 /* Pods_Word_UnscramblerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Word_UnscramblerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EF0121C8632A275B93AC2E /* Pods-Word UnscramblerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E72DD8FC65ADB0ACC9EA275B /* Pods_Word_UnscramblerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Word_UnscramblerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDFCD701FCD4AE6E1E1070A /* Pods_Word_Unscrambler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F1C15A89C83607F9C00DF8 /* Pods_Word_UnscramblerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8597D5461A571913E4A69608 /* Pods_Word_UnscramblerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +104,8 @@
 				10DD00381D8A20070076D3BD /* Word UnscramblerTests */,
 				10DD00431D8A20070076D3BD /* Word UnscramblerUITests */,
 				10DD001F1D8A20070076D3BD /* Products */,
+				BF6109688A61A3F7A1296223 /* Pods */,
+				3C3CD7F1861EA447717828C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,13 +124,14 @@
 			children = (
 				10507BAC1DB5B20100D91147 /* items.txt */,
 				10DD00211D8A20070076D3BD /* AppDelegate.swift */,
-				10DD00231D8A20070076D3BD /* ViewController.swift */,
+				106EADA4206478D4008E41B0 /* WordUnscramblerViewController.swift */,
 				10E18DC21DB1DF52004F6491 /* WebViewController.swift */,
 				10DD00251D8A20070076D3BD /* Main.storyboard */,
 				10DD002B1D8A20070076D3BD /* Assets.xcassets */,
 				10DD002D1D8A20070076D3BD /* LaunchScreen.storyboard */,
 				10DD00301D8A20070076D3BD /* Info.plist */,
-				10DD00281D8A20070076D3BD /* Word_Unscrambler.xcdatamodeld */,
+				10CD01D32072894600152C68 /* GoogleService-Info.plist */,
+				106EADA220646E55008E41B0 /* Combinations.swift */,
 			);
 			path = "Word Unscrambler";
 			sourceTree = "<group>";
@@ -134,6 +154,29 @@
 			path = "Word UnscramblerUITests";
 			sourceTree = "<group>";
 		};
+		3C3CD7F1861EA447717828C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE16E75A5D661CB5317EB54 /* Pods_Word_Unscrambler.framework */,
+				E72DD8FC65ADB0ACC9EA275B /* Pods_Word_UnscramblerTests.framework */,
+				B61AF3B9DCD4A51E22383A12 /* Pods_Word_UnscramblerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6109688A61A3F7A1296223 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DB28EE393E853AA144B2A6A /* Pods-Word Unscrambler.debug.xcconfig */,
+				7AAEC2551AF72120C378539A /* Pods-Word Unscrambler.release.xcconfig */,
+				9DA310760039FD5D69FA083E /* Pods-Word UnscramblerTests.debug.xcconfig */,
+				02CCE1A0D854DAC0F2540E68 /* Pods-Word UnscramblerTests.release.xcconfig */,
+				E2EF0121C8632A275B93AC2E /* Pods-Word UnscramblerUITests.debug.xcconfig */,
+				3A7C33669F97B24621C5A6C6 /* Pods-Word UnscramblerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10DD00491D8A20070076D3BD /* Build configuration list for PBXNativeTarget "Word Unscrambler" */;
 			buildPhases = (
+				21A8F902F097F337AC943ED9 /* [CP] Check Pods Manifest.lock */,
 				10DD001A1D8A20070076D3BD /* Sources */,
 				10DD001B1D8A20070076D3BD /* Frameworks */,
 				10DD001C1D8A20070076D3BD /* Resources */,
+				FF56DCDD453142BCFFC57E11 /* [CP] Embed Pods Frameworks */,
+				E34519EEEA7F00DABF6F796E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10DD004C1D8A20070076D3BD /* Build configuration list for PBXNativeTarget "Word UnscramblerTests" */;
 			buildPhases = (
+				952D17E83A0B91962C6DF84D /* [CP] Check Pods Manifest.lock */,
 				10DD00311D8A20070076D3BD /* Sources */,
 				10DD00321D8A20070076D3BD /* Frameworks */,
 				10DD00331D8A20070076D3BD /* Resources */,
+				B9ED534DBE76026C96208074 /* [CP] Embed Pods Frameworks */,
+				3337F8AC993F1CABF99957FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10DD004F1D8A20070076D3BD /* Build configuration list for PBXNativeTarget "Word UnscramblerUITests" */;
 			buildPhases = (
+				C2D6F11EEDDBBFE6A5C0D973 /* [CP] Check Pods Manifest.lock */,
 				10DD003C1D8A20070076D3BD /* Sources */,
 				10DD003D1D8A20070076D3BD /* Frameworks */,
 				10DD003E1D8A20070076D3BD /* Resources */,
+				439CC25F22920F8D8DCCC45B /* [CP] Embed Pods Frameworks */,
+				B019463CB2E0A3ED1F87FF63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,24 +249,25 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Satish Boggarapu";
 				TargetAttributes = {
 					10DD001D1D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = TEGLEE3UYA;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
 					};
 					10DD00341D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = TEGLEE3UYA;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0920;
 						TestTargetID = 10DD001D1D8A20070076D3BD;
 					};
 					10DD003F1D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = TEGLEE3UYA;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0920;
 						TestTargetID = 10DD001D1D8A20070076D3BD;
 					};
 				};
@@ -246,6 +299,7 @@
 			files = (
 				10DD002F1D8A20070076D3BD /* LaunchScreen.storyboard in Resources */,
 				10507BAD1DB5B20100D91147 /* items.txt in Resources */,
+				10CD01D42072894600152C68 /* GoogleService-Info.plist in Resources */,
 				10DD002C1D8A20070076D3BD /* Assets.xcassets in Resources */,
 				10DD00271D8A20070076D3BD /* Main.storyboard in Resources */,
 			);
@@ -267,15 +321,167 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		21A8F902F097F337AC943ED9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Word Unscrambler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3337F8AC993F1CABF99957FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		439CC25F22920F8D8DCCC45B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		952D17E83A0B91962C6DF84D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Word UnscramblerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B019463CB2E0A3ED1F87FF63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9ED534DBE76026C96208074 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2D6F11EEDDBBFE6A5C0D973 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Word UnscramblerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E34519EEEA7F00DABF6F796E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF56DCDD453142BCFFC57E11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		10DD001A1D8A20070076D3BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10DD00241D8A20070076D3BD /* ViewController.swift in Sources */,
 				10DD00221D8A20070076D3BD /* AppDelegate.swift in Sources */,
-				10DD002A1D8A20070076D3BD /* Word_Unscrambler.xcdatamodeld in Sources */,
 				10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */,
+				106EADA320646E55008E41B0 /* Combinations.swift in Sources */,
+				106EADA5206478D4008E41B0 /* WordUnscramblerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,14 +545,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -376,6 +588,7 @@
 				PROVISIONING_PROFILE = "e5cb3ff2-8fdc-4ac2-a37b-81d2aa36ef4a";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -389,14 +602,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -419,6 +638,7 @@
 				PROVISIONING_PROFILE = "e5cb3ff2-8fdc-4ac2-a37b-81d2aa36ef4a";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -426,76 +646,97 @@
 		};
 		10DD004A1D8A20070076D3BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DB28EE393E853AA144B2A6A /* Pods-Word Unscrambler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				INFOPLIST_FILE = "Word Unscrambler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.satishboggarapu.Word-Unscrambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		10DD004B1D8A20070076D3BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AAEC2551AF72120C378539A /* Pods-Word Unscrambler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				INFOPLIST_FILE = "Word Unscrambler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.satishboggarapu.Word-Unscrambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		10DD004D1D8A20070076D3BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA310760039FD5D69FA083E /* Pods-Word UnscramblerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Word UnscramblerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Word Unscrambler.app/Word Unscrambler";
 			};
 			name = Debug;
 		};
 		10DD004E1D8A20070076D3BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02CCE1A0D854DAC0F2540E68 /* Pods-Word UnscramblerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Word UnscramblerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Word Unscrambler.app/Word Unscrambler";
 			};
 			name = Release;
 		};
 		10DD00501D8A20070076D3BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2EF0121C8632A275B93AC2E /* Pods-Word UnscramblerUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Word UnscramblerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Word Unscrambler";
 			};
 			name = Debug;
 		};
 		10DD00511D8A20070076D3BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A7C33669F97B24621C5A6C6 /* Pods-Word UnscramblerUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Word UnscramblerUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = "Word Unscrambler";
 			};
 			name = Release;
@@ -540,19 +781,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		10DD00281D8A20070076D3BD /* Word_Unscrambler.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				10DD00291D8A20070076D3BD /* Word_Unscrambler.xcdatamodel */,
-			);
-			currentVersion = 10DD00291D8A20070076D3BD /* Word_Unscrambler.xcdatamodel */;
-			path = Word_Unscrambler.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 10DD00161D8A20070076D3BD /* Project object */;
 }

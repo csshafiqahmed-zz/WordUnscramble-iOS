@@ -1,0 +1,6 @@
+framework module Pods_Word_Unscrambler {
+  umbrella header "Pods-Word Unscrambler-umbrella.h"
+
+  export *
+  module * { export * }
+}

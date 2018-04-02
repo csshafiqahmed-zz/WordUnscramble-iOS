@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>107540536172-lortkovveflbbr4d78f84sa563s69k9j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.107540536172-lortkovveflbbr4d78f84sa563s69k9j</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmZWKH6mqxzay0_fTlamdSnug2C1VABOA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>107540536172</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.satishboggarapu.Word-Unscrambler</string>
+	<key>PROJECT_ID</key>
+	<string>wordunscrambler-31357</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wordunscrambler-31357.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:107540536172:ios:460d3e66a35be99b</string>
+	<key>DATABASE_URL</key>
+	<string>https://wordunscrambler-31357.firebaseio.com</string>
+</dict>
+</plist>
