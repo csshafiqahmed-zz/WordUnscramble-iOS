@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.makeKeyAndVisible()
         
-        let viewController = UINavigationController(rootViewController: WordUnscramblerViewController())
+        let viewController = UINavigationController(rootViewController: MainViewController())
         window?.rootViewController = viewController
         
         return true

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E3F14CA4649034601623A1749425552C"
+               BlueprintIdentifier = "D7A17B14E7D15CD88ABCC1787061AAF0"
                BuildableName = "Pods_Word_Unscrambler.framework"
                BlueprintName = "Pods-Word Unscrambler"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E3F14CA4649034601623A1749425552C"
+            BlueprintIdentifier = "D7A17B14E7D15CD88ABCC1787061AAF0"
             BuildableName = "Pods_Word_Unscrambler.framework"
             BlueprintName = "Pods-Word Unscrambler"
             ReferencedContainer = "container:Pods.xcodeproj">

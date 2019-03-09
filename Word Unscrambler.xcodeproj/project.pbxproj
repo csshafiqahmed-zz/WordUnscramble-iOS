@@ -18,6 +18,19 @@
 		10DD003A1D8A20070076D3BD /* Word_UnscramblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00391D8A20070076D3BD /* Word_UnscramblerTests.swift */; };
 		10DD00451D8A20070076D3BD /* Word_UnscramblerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */; };
 		10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E18DC21DB1DF52004F6491 /* WebViewController.swift */; };
+		192E40555EC5A42F2851F233 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E43A0C2BE7713A00B8655 /* UIViewControllerExtension.swift */; };
+		192E44ABA4D6A42E7F2A3AF2 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */; };
+		192E44FBFB8ADB50C3C6C1B6 /* AlegreyaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */; };
+		192E45DD500340878E954655 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4DBB91D2EF43DE20F7A0 /* Icon.swift */; };
+		192E469D237414FBDFC60A9A /* AlegreyaSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */; };
+		192E47F555D76A6722749AA6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4D0D84EB18B88AA3D04A /* Color.swift */; };
+		192E4B18925542C97CEB5DD8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4D835E278916A818DBF4 /* MainViewController.swift */; };
+		192E4B41BB561A6250BEEF2A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E41363D0C1D9F2C4E3263 /* Message.swift */; };
+		192E4C11EDAAACB78A304CDE /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */; };
+		192E4C51D303AA67483EB7C4 /* AlegreyaSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E4C48C3E57A1CA00694C7 /* AlegreyaSans-ExtraBold.ttf */; };
+		192E4D0808075595AF729419 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E47625FD846327F5913BA /* Font.swift */; };
+		192E4F6D704A3635A84BF927 /* AlegreyaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */; };
+		192E4F74D914EDCA975EF59B /* AlegreyaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E4E43292D7FF87C182227 /* AlegreyaSans-Regular.ttf */; };
 		8597D5461A571913E4A69608 /* Pods_Word_UnscramblerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AF3B9DCD4A51E22383A12 /* Pods_Word_UnscramblerUITests.framework */; };
 		A3F1C15A89C83607F9C00DF8 /* Pods_Word_UnscramblerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72DD8FC65ADB0ACC9EA275B /* Pods_Word_UnscramblerTests.framework */; };
 		BCDFCD701FCD4AE6E1E1070A /* Pods_Word_Unscrambler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE16E75A5D661CB5317EB54 /* Pods_Word_Unscrambler.framework */; };
@@ -59,6 +72,19 @@
 		10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_UnscramblerUITests.swift; sourceTree = "<group>"; };
 		10DD00461D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10E18DC21DB1DF52004F6491 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		192E41363D0C1D9F2C4E3263 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Medium.ttf"; sourceTree = "<group>"; };
+		192E43A0C2BE7713A00B8655 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Black.ttf"; sourceTree = "<group>"; };
+		192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Bold.ttf"; sourceTree = "<group>"; };
+		192E47625FD846327F5913BA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		192E4C48C3E57A1CA00694C7 /* AlegreyaSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		192E4D0D84EB18B88AA3D04A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		192E4D835E278916A818DBF4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		192E4DBB91D2EF43DE20F7A0 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		192E4E43292D7FF87C182227 /* AlegreyaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Regular.ttf"; sourceTree = "<group>"; };
+		192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		3A7C33669F97B24621C5A6C6 /* Pods-Word UnscramblerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6DB28EE393E853AA144B2A6A /* Pods-Word Unscrambler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Unscrambler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.debug.xcconfig"; sourceTree = "<group>"; };
 		7AAEC2551AF72120C378539A /* Pods-Word Unscrambler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Unscrambler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +158,10 @@
 				10DD00301D8A20070076D3BD /* Info.plist */,
 				10CD01D32072894600152C68 /* GoogleService-Info.plist */,
 				106EADA220646E55008E41B0 /* Combinations.swift */,
+				192E49B0E12E1323F4F3AC3E /* ViewControllers */,
+				192E46A50DEE2C300500D9CD /* Extensions */,
+				192E48FE3CE381D5FA6208C7 /* Util */,
+				192E4AF4A6FA92E39D12A236 /* Fonts */,
 			);
 			path = "Word Unscrambler";
 			sourceTree = "<group>";
@@ -152,6 +182,47 @@
 				10DD00461D8A20070076D3BD /* Info.plist */,
 			);
 			path = "Word UnscramblerUITests";
+			sourceTree = "<group>";
+		};
+		192E46A50DEE2C300500D9CD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				192E43A0C2BE7713A00B8655 /* UIViewControllerExtension.swift */,
+				192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */,
+				192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		192E48FE3CE381D5FA6208C7 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				192E4D0D84EB18B88AA3D04A /* Color.swift */,
+				192E47625FD846327F5913BA /* Font.swift */,
+				192E41363D0C1D9F2C4E3263 /* Message.swift */,
+				192E4DBB91D2EF43DE20F7A0 /* Icon.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		192E49B0E12E1323F4F3AC3E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				192E4D835E278916A818DBF4 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		192E4AF4A6FA92E39D12A236 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */,
+				192E4C48C3E57A1CA00694C7 /* AlegreyaSans-ExtraBold.ttf */,
+				192E4E43292D7FF87C182227 /* AlegreyaSans-Regular.ttf */,
+				192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */,
+				192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		3C3CD7F1861EA447717828C2 /* Frameworks */ = {
@@ -189,7 +260,6 @@
 				10DD001B1D8A20070076D3BD /* Frameworks */,
 				10DD001C1D8A20070076D3BD /* Resources */,
 				FF56DCDD453142BCFFC57E11 /* [CP] Embed Pods Frameworks */,
-				E34519EEEA7F00DABF6F796E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,8 +278,6 @@
 				10DD00311D8A20070076D3BD /* Sources */,
 				10DD00321D8A20070076D3BD /* Frameworks */,
 				10DD00331D8A20070076D3BD /* Resources */,
-				B9ED534DBE76026C96208074 /* [CP] Embed Pods Frameworks */,
-				3337F8AC993F1CABF99957FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,8 +297,6 @@
 				10DD003C1D8A20070076D3BD /* Sources */,
 				10DD003D1D8A20070076D3BD /* Frameworks */,
 				10DD003E1D8A20070076D3BD /* Resources */,
-				439CC25F22920F8D8DCCC45B /* [CP] Embed Pods Frameworks */,
-				B019463CB2E0A3ED1F87FF63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,14 +315,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Satish Boggarapu";
 				TargetAttributes = {
 					10DD001D1D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = TEGLEE3UYA;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					10DD00341D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -302,6 +368,11 @@
 				10CD01D42072894600152C68 /* GoogleService-Info.plist in Resources */,
 				10DD002C1D8A20070076D3BD /* Assets.xcassets in Resources */,
 				10DD00271D8A20070076D3BD /* Main.storyboard in Resources */,
+				192E469D237414FBDFC60A9A /* AlegreyaSans-Black.ttf in Resources */,
+				192E4C51D303AA67483EB7C4 /* AlegreyaSans-ExtraBold.ttf in Resources */,
+				192E4F74D914EDCA975EF59B /* AlegreyaSans-Regular.ttf in Resources */,
+				192E44FBFB8ADB50C3C6C1B6 /* AlegreyaSans-Bold.ttf in Resources */,
+				192E4F6D704A3635A84BF927 /* AlegreyaSans-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,36 +411,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3337F8AC993F1CABF99957FF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		439CC25F22920F8D8DCCC45B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		952D17E83A0B91962C6DF84D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,36 +427,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B019463CB2E0A3ED1F87FF63 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B9ED534DBE76026C96208074 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C2D6F11EEDDBBFE6A5C0D973 /* [CP] Check Pods Manifest.lock */ = {
@@ -436,21 +447,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E34519EEEA7F00DABF6F796E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FF56DCDD453142BCFFC57E11 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -459,11 +455,25 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +492,14 @@
 				10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */,
 				106EADA320646E55008E41B0 /* Combinations.swift in Sources */,
 				106EADA5206478D4008E41B0 /* WordUnscramblerViewController.swift in Sources */,
+				192E4B18925542C97CEB5DD8 /* MainViewController.swift in Sources */,
+				192E40555EC5A42F2851F233 /* UIViewControllerExtension.swift in Sources */,
+				192E47F555D76A6722749AA6 /* Color.swift in Sources */,
+				192E44ABA4D6A42E7F2A3AF2 /* UINavigationControllerExtension.swift in Sources */,
+				192E4D0808075595AF729419 /* Font.swift in Sources */,
+				192E4C11EDAAACB78A304CDE /* UITextFieldExtension.swift in Sources */,
+				192E4B41BB561A6250BEEF2A /* Message.swift in Sources */,
+				192E45DD500340878E954655 /* Icon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,12 +567,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -562,6 +582,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Satish Boggarapu (NM484VC4JK)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -606,12 +627,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -619,6 +642,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Satish Boggarapu (TEGLEE3UYA)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -649,16 +673,16 @@
 			baseConfigurationReference = 6DB28EE393E853AA144B2A6A /* Pods-Word Unscrambler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				INFOPLIST_FILE = "Word Unscrambler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.satishboggarapu.Word-Unscrambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "028eedbe-c618-4fb8-ab2e-06d6fca3d84f";
+				PROVISIONING_PROFILE_SPECIFIER = WordUnscramblerDevelopment;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -669,15 +693,17 @@
 			baseConfigurationReference = 7AAEC2551AF72120C378539A /* Pods-Word Unscrambler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				INFOPLIST_FILE = "Word Unscrambler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.satishboggarapu.Word-Unscrambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "5ef05b47-affc-41d3-936a-957327a04a39";
+				PROVISIONING_PROFILE_SPECIFIER = WordUnscramblerDistribution;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -688,6 +714,7 @@
 			baseConfigurationReference = 9DA310760039FD5D69FA083E /* Pods-Word UnscramblerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Satish Boggarapu (NM484VC4JK)";
 				INFOPLIST_FILE = "Word UnscramblerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerTests";
@@ -703,6 +730,7 @@
 			baseConfigurationReference = 02CCE1A0D854DAC0F2540E68 /* Pods-Word UnscramblerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Satish Boggarapu (NM484VC4JK)";
 				INFOPLIST_FILE = "Word UnscramblerTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.Word-UnscramblerTests";

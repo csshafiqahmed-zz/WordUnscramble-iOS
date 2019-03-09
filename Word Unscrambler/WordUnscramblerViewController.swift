@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMobileAds
 import Firebase
+import SnapKit
 
 class WordUnscramblerViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, GADBannerViewDelegate {
     
@@ -48,7 +49,7 @@ class WordUnscramblerViewController: UIViewController, UITextFieldDelegate, UITa
         
     }
 
-    private func setupView() {
+    override func setupView() {
         initializeTextField()
         initializeGoButton()
         initializeResultsLabel()

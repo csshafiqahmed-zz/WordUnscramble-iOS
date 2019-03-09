@@ -2,70 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6441f43b-4b4b-412a-a7e7-0e0de73d2ba1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Word Unscrambler/Combinations.swift" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Word Unscrambler/WordUnscramblerViewController.swift" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/project.pbxproj" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/xcuserdata/SatishBoggarapu.xcuserdatad/xcschemes/Word Unscrambler.xcscheme" afterPath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/xcuserdata/SatishBoggarapu.xcuserdatad/xcschemes/Word Unscrambler.xcscheme" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/xcuserdata/SatishBoggarapu.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/xcuserdata/SatishBoggarapu.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift" afterPath="$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/AppIcon.appiconset/Contents.json" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/Word Unscrambler/Base.lproj/Main.storyboard" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewController.swift" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewController.swift" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/round_close_black_24pt.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/round_close_black_24pt.imageset/round_close_black_24pt_1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/round_close_black_24pt.imageset/round_close_black_24pt_2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/round_close_black_24pt.imageset/round_close_black_24pt_3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/round_search_black_24pt.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/round_search_black_24pt.imageset/round_search_black_24pt_1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/round_search_black_24pt.imageset/round_search_black_24pt_2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/round_search_black_24pt.imageset/round_search_black_24pt_3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/satishboggarapu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/satishboggarapu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xcode.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/GoogleToolboxForMac.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/GoogleToolboxForMac.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/Pods-Word Unscrambler.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/Pods-Word Unscrambler.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/Pods-Word UnscramblerTests.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/Pods-Word UnscramblerTests.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/Pods-Word UnscramblerUITests.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/Pods-Word UnscramblerUITests.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/nanopb.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/nanopb.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/satishboggarapu.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-acknowledgements.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-acknowledgements.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-acknowledgements.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-acknowledgements.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-resources.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler-resources.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests-resources.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests-resources.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests-resources.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests-resources.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/nanopb/nanopb.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Target Support Files/nanopb/nanopb.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/xcuserdata/SatishBoggarapu.xcuserdatad/xcschemes/Word Unscrambler.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/xcuserdata/SatishBoggarapu.xcuserdatad/xcschemes/Word Unscrambler.xcscheme" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcworkspace/xcuserdata/satishboggarapu.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler.xcworkspace/xcuserdata/satishboggarapu.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word Unscrambler/WordUnscramblerViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/WordUnscramblerViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Word_Unscrambler-haqyplpgynzwvxeaoxdbhjmchdji/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_7CEB84B3-DF29-4A5F-BCF7-6F926DD50ADB" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_18000B8C-BAFA-41A6-B18E-9E6F997DEBC4" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="WordUnscramblerViewController.swift" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Word Unscrambler/WordUnscramblerViewController.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="893">
-                  <caret line="319" column="46" lean-forward="false" selection-start-line="319" selection-start-column="46" selection-end-line="319" selection-end-column="46" />
-                  <folding>
-                    <element signature="e#1328#2540#0" expanded="false" />
-                    <element signature="e#2546#3175#0" expanded="false" />
-                    <element signature="e#3181#4434#0" expanded="false" />
-                    <element signature="e#4440#4887#0" expanded="false" />
-                    <element signature="e#4893#5176#0" expanded="false" />
-                    <element signature="e#5182#5463#0" expanded="false" />
-                    <element signature="e#5469#6155#0" expanded="false" />
-                    <element signature="e#6161#6707#0" expanded="false" />
-                    <element signature="e#6713#6884#0" expanded="false" />
-                    <element signature="e#12607#12758#0" expanded="false" />
-                    <element signature="e#12764#13864#0" expanded="false" />
-                    <element signature="e#14239#14756#0" expanded="false" />
-                    <element signature="e#14758#15093#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewController.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-442">
-                  <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="917">
+              <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Message.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Word Unscrambler/Extensions/UITextFieldExtension.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Font.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Color.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -85,34 +132,43 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Word Unscrambler/ViewController.swift" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/WordUnscramblerViewController.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Extensions/UIViewControllerExtension.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Extensions/UINavigationControllerExtension.swift" />
+        <option value="$PROJECT_DIR$/Podfile" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Util/Message.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Util/Font.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Extensions/UITextFieldExtension.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Util/Color.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="50" />
-    <option name="y" value="22" />
-    <option name="width" value="2633" />
-    <option name="height" value="1598" />
+    <option name="x" value="1920" />
+    <option name="y" value="-150" />
+    <option name="width" value="2560" />
+    <option name="height" value="1417" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
+            </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
@@ -122,6 +178,30 @@
               <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
               <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
             </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
+              <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
+              <item name="Extensions" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
+              <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
+              <item name="Fonts" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
+              <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
+              <item name="Util" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
+              <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
+              <item name="ViewControllers" type="fcab9f18:XcodeViewNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -130,7 +210,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="Word Unscrambler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -145,15 +227,15 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Word Unscrambler" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Word Unscrambler" TARGET_NAME="Word Unscrambler" CONFIG_NAME="Debug" SCHEME_NAME="Word Unscrambler" RUN_TARGET_PROJECT_NAME="Word Unscrambler" RUN_TARGET_NAME="Word Unscrambler" MAKE_ACTIVE="TRUE">
-      <envs />
+    <configuration name="Word Unscrambler" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Word Unscrambler" TARGET_NAME="Word Unscrambler" CONFIG_NAME="Debug" SCHEME_NAME="Word Unscrambler" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="Word Unscrambler" RUN_TARGET_NAME="Word Unscrambler" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
     </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -167,94 +249,126 @@
       <updated>1521762866385</updated>
       <workItem from="1521762869147" duration="9527000" />
       <workItem from="1521815206196" duration="4390000" />
+      <workItem from="1552062499712" duration="10064000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13917000" />
+    <option name="totallyTimeSpent" value="23981000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="22" width="1871" height="1178" extended-state="6" />
+    <frame x="1920" y="-150" width="2560" height="1417" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12648648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328676" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19627412" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" order="0" weight="0.24980143" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19622642" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.23773585" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="5" visible="true" weight="0.16481334" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Word Unscrambler/WordUnscramblerViewController.swift">
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewController.swift" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1328#2540#0" expanded="false" />
-            <element signature="e#2546#3175#0" expanded="false" />
-            <element signature="e#3181#4434#0" expanded="false" />
-            <element signature="e#4440#4887#0" expanded="false" />
-            <element signature="e#4893#5176#0" expanded="false" />
-            <element signature="e#5182#5463#0" expanded="false" />
-            <element signature="e#5469#6155#0" expanded="false" />
-            <element signature="e#6161#6707#0" expanded="false" />
-            <element signature="e#6713#6884#0" expanded="false" />
-            <element signature="e#12607#12758#0" expanded="false" />
-            <element signature="e#12764#13864#0" expanded="false" />
-            <element signature="e#14239#14756#0" expanded="false" />
-            <element signature="e#14758#15093#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="378">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Word Unscrambler/WordUnscramblerViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="319" column="46" lean-forward="false" selection-start-line="319" selection-start-column="46" selection-end-line="319" selection-end-column="46" />
+        <state relative-caret-position="280">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Extensions/UIViewControllerExtension.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Extensions/UINavigationControllerExtension.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
           <folding>
-            <element signature="e#1328#2540#0" expanded="false" />
-            <element signature="e#2546#3175#0" expanded="false" />
-            <element signature="e#3181#4434#0" expanded="false" />
-            <element signature="e#4440#4887#0" expanded="false" />
-            <element signature="e#4893#5176#0" expanded="false" />
-            <element signature="e#5182#5463#0" expanded="false" />
-            <element signature="e#5469#6155#0" expanded="false" />
-            <element signature="e#6161#6707#0" expanded="false" />
-            <element signature="e#6713#6884#0" expanded="false" />
-            <element signature="e#12607#12758#0" expanded="false" />
-            <element signature="e#12764#13864#0" expanded="false" />
-            <element signature="e#14239#14756#0" expanded="false" />
-            <element signature="e#14758#15093#0" expanded="false" />
+            <element signature="e#0#2#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Message.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Font.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Extensions/UITextFieldExtension.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Color.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="917">
+          <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
         </state>
       </provider>
     </entry>
