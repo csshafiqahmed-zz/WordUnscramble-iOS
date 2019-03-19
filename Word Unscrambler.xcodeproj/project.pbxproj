@@ -19,11 +19,15 @@
 		10DD00451D8A20070076D3BD /* Word_UnscramblerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */; };
 		10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E18DC21DB1DF52004F6491 /* WebViewController.swift */; };
 		192E40555EC5A42F2851F233 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E43A0C2BE7713A00B8655 /* UIViewControllerExtension.swift */; };
+		192E40D37324E59FEB08E6BA /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E44607A12D6194F01A5DD /* WordTableViewCell.swift */; };
+		192E40E380D0F1F3F18C22B6 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4FE64D69B9BE3E41C1E7 /* Section.swift */; };
 		192E44ABA4D6A42E7F2A3AF2 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */; };
 		192E44FBFB8ADB50C3C6C1B6 /* AlegreyaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */; };
+		192E45CE8F803031F8F3C441 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4C2BD860E148C84DF0A0 /* UIViewExtension.swift */; };
 		192E45DD500340878E954655 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4DBB91D2EF43DE20F7A0 /* Icon.swift */; };
 		192E469D237414FBDFC60A9A /* AlegreyaSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */; };
 		192E47F555D76A6722749AA6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4D0D84EB18B88AA3D04A /* Color.swift */; };
+		192E4A1AC6DE1026B9E71B16 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */; };
 		192E4B18925542C97CEB5DD8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4D835E278916A818DBF4 /* MainViewController.swift */; };
 		192E4B41BB561A6250BEEF2A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E41363D0C1D9F2C4E3263 /* Message.swift */; };
 		192E4C11EDAAACB78A304CDE /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */; };
@@ -75,16 +79,20 @@
 		192E41363D0C1D9F2C4E3263 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Medium.ttf"; sourceTree = "<group>"; };
 		192E43A0C2BE7713A00B8655 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		192E44607A12D6194F01A5DD /* WordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
 		192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Black.ttf"; sourceTree = "<group>"; };
 		192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Bold.ttf"; sourceTree = "<group>"; };
 		192E47625FD846327F5913BA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		192E4C2BD860E148C84DF0A0 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		192E4C48C3E57A1CA00694C7 /* AlegreyaSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		192E4D0D84EB18B88AA3D04A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		192E4D835E278916A818DBF4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		192E4DBB91D2EF43DE20F7A0 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		192E4E43292D7FF87C182227 /* AlegreyaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Regular.ttf"; sourceTree = "<group>"; };
+		192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
 		192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		192E4FE64D69B9BE3E41C1E7 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		3A7C33669F97B24621C5A6C6 /* Pods-Word UnscramblerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6DB28EE393E853AA144B2A6A /* Pods-Word Unscrambler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Unscrambler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.debug.xcconfig"; sourceTree = "<group>"; };
 		7AAEC2551AF72120C378539A /* Pods-Word Unscrambler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Unscrambler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +170,8 @@
 				192E46A50DEE2C300500D9CD /* Extensions */,
 				192E48FE3CE381D5FA6208C7 /* Util */,
 				192E4AF4A6FA92E39D12A236 /* Fonts */,
+				192E4870E6CE39E66AC8F1AE /* Cells */,
+				192E4B9FEAB91025BBC8E0AD /* Type */,
 			);
 			path = "Word Unscrambler";
 			sourceTree = "<group>";
@@ -190,8 +200,18 @@
 				192E43A0C2BE7713A00B8655 /* UIViewControllerExtension.swift */,
 				192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */,
 				192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */,
+				192E4C2BD860E148C84DF0A0 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		192E4870E6CE39E66AC8F1AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				192E44607A12D6194F01A5DD /* WordTableViewCell.swift */,
+				192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		192E48FE3CE381D5FA6208C7 /* Util */ = {
@@ -223,6 +243,14 @@
 				192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		192E4B9FEAB91025BBC8E0AD /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				192E4FE64D69B9BE3E41C1E7 /* Section.swift */,
+			);
+			path = Type;
 			sourceTree = "<group>";
 		};
 		3C3CD7F1861EA447717828C2 /* Frameworks */ = {
@@ -500,6 +528,10 @@
 				192E4C11EDAAACB78A304CDE /* UITextFieldExtension.swift in Sources */,
 				192E4B41BB561A6250BEEF2A /* Message.swift in Sources */,
 				192E45DD500340878E954655 /* Icon.swift in Sources */,
+				192E40D37324E59FEB08E6BA /* WordTableViewCell.swift in Sources */,
+				192E45CE8F803031F8F3C441 /* UIViewExtension.swift in Sources */,
+				192E4A1AC6DE1026B9E71B16 /* CollapsibleTableViewHeader.swift in Sources */,
+				192E40E380D0F1F3F18C22B6 /* Section.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

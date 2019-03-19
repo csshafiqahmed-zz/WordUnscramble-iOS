@@ -2,7 +2,7 @@ import UIKit
 
 extension UIViewController {
 
-    func addConstraints() {}
+    @objc func addConstraints() {}
 
-    func setupView() {}
+    @objc func setupView() {}
 }
