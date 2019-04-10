@@ -25,6 +25,7 @@
 		192E41ACAC0D76758BEC9B27 /* FirebaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E448C35D4D67C25AF3E94 /* FirebaseKey.swift */; };
 		192E41B9E8047C6E96938C55 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4ED948876667F9ED5BC9 /* FilterViewController.swift */; };
 		192E41F6F83527046E05AC32 /* FirebaseWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4AA9544482559D4E7A67 /* FirebaseWord.swift */; };
+		192E42925ACDE98E526F934B /* DefinitionCacheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4C42C3927914F68D7A56 /* DefinitionCacheController.swift */; };
 		192E433E5A940D32BA26D171 /* invalid_words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192E4E4F5354714F9703F8AE /* invalid_words.txt */; };
 		192E439C090F5E0965775601 /* FirebaseReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E49056F848F67B81FF008 /* FirebaseReference.swift */; };
 		192E44ABA4D6A42E7F2A3AF2 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */; };
@@ -47,6 +48,7 @@
 		192E4D0808075595AF729419 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E47625FD846327F5913BA /* Font.swift */; };
 		192E4D65362EC24B4DD090E6 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192E4EA911BCFBAADE70319B /* words.txt */; };
 		192E4D73DA17E6F0ADBB7B32 /* FetchDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45082A2439BDC45A40A1 /* FetchDefinition.swift */; };
+		192E4D9DE4CD715BEECBF404 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E486ED2019AE6BD720B86 /* Device.swift */; };
 		192E4DC96685179B9338301A /* FIrebaseFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */; };
 		192E4DE53AD2FCC6EF0EBA7C /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45300D3668AAD0815BD4 /* DefinitionViewController.swift */; };
 		192E4E3ECAAB7426644E0831 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45551F2A85F8D4058B7A /* Circle.swift */; };
@@ -113,12 +115,14 @@
 		192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Bold.ttf"; sourceTree = "<group>"; };
 		192E47625FD846327F5913BA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		192E47CE3AEAC74C20606CFA /* loading_cubes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_cubes.json; sourceTree = "<group>"; };
+		192E486ED2019AE6BD720B86 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		192E487CC35795CFED381B36 /* UnScrambler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnScrambler.swift; sourceTree = "<group>"; };
 		192E49056F848F67B81FF008 /* FirebaseReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		192E4AA9544482559D4E7A67 /* FirebaseWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseWord.swift; sourceTree = "<group>"; };
 		192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIrebaseFetch.swift; sourceTree = "<group>"; };
 		192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		192E4C2BD860E148C84DF0A0 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		192E4C42C3927914F68D7A56 /* DefinitionCacheController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionCacheController.swift; sourceTree = "<group>"; };
 		192E4C48C3E57A1CA00694C7 /* AlegreyaSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		192E4CCCF373EC112CC1CD40 /* FirebaseFetchWordCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseFetchWordCompletion.swift; sourceTree = "<group>"; };
 		192E4D0D84EB18B88AA3D04A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -261,6 +265,7 @@
 				192E448C35D4D67C25AF3E94 /* FirebaseKey.swift */,
 				192E49056F848F67B81FF008 /* FirebaseReference.swift */,
 				192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */,
+				192E4C42C3927914F68D7A56 /* DefinitionCacheController.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				192E4DBB91D2EF43DE20F7A0 /* Icon.swift */,
 				192E44C9AACF1F6A94913DFA /* Default.swift */,
 				192E4491A265B8CD8C0C8574 /* LottieAnimation.swift */,
+				192E486ED2019AE6BD720B86 /* Device.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -668,6 +674,8 @@
 				192E4827FD40BFCE90A6FE08 /* DefinitionTableViewCell.swift in Sources */,
 				192E4CA8E44A41AF32BA81CB /* LOTAnimationViewExtension.swift in Sources */,
 				192E4F7D81B59E4794769EA3 /* LottieAnimation.swift in Sources */,
+				192E42925ACDE98E526F934B /* DefinitionCacheController.swift in Sources */,
+				192E4D9DE4CD715BEECBF404 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

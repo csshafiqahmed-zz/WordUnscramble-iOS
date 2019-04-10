@@ -21,23 +21,11 @@ class DefinitionViewController: UIViewController {
     private var firebaseWord: FirebaseWord?
     private var definitions = [String]()
     private var initialTouchPoint: CGPoint = CGPoint(x: 0,y: 0)
-    private var firebaseFetch: FirebaseFetch!
+    private var definitionCacheController: DefinitionCacheController!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        firebaseFetch = FirebaseFetch()
-        firebaseFetch.fetchDefinitionForWord(word) { completion in
-            switch completion {
-            case .success(let word):
-                self.firebaseWord = word
-                self.refreshView()
-            case .wordDoesNotExists, .failure:
-                return
-            }
-            self.animationView.stopAnimation()
-        }
 
         setupView()
         addConstraints()
@@ -49,6 +37,18 @@ class DefinitionViewController: UIViewController {
 
         // pan gesture
         view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerHandler(_:))))
+
+        definitionCacheController = DefinitionCacheController.getInstance()
+        definitionCacheController.getDefinitionForWord(word) { completion in
+            switch completion {
+            case .success(let word):
+                self.firebaseWord = word
+                self.refreshView()
+            case .wordDoesNotExists, .failure:
+                return
+            }
+            self.animationView.stopAnimation()
+        }
     }
 
     private func refreshView() {
@@ -124,9 +124,10 @@ class DefinitionViewController: UIViewController {
         var height = 12 + titleLabel.intrinsicContentSize.height
         height += titleLabel.intrinsicContentSize.height
         height += 8 + tableView.contentSize.height + 4
-        height += ((view.frame.height - view.layoutMarginsGuide.layoutFrame.height)/2)
+        height += bottomLayoutMargin
 
         let maxHeight = view.frame.height * 0.6
+        print(height)
         return min(height, maxHeight)
     }
 
