@@ -1,21 +1,31 @@
 import Foundation
 
 public struct Section {
-    var name: String
-    var items: [Item]
+    var headerName: String
+    var wordLength: Int
+    var words: [Word]
     var collapsed: Bool
 
-    public init(name: String, items: [Item], collapsed: Bool = false) {
-        self.name = name
-        self.items = items
+    public init(headerName: String, wordLength: Int, words: [Word], collapsed: Bool = false) {
+        self.headerName = headerName
+        self.wordLength = wordLength
+        self.words = words
         self.collapsed = collapsed
     }
 }
 
-public struct Item {
-    var name: String
+public struct Word: Equatable {
+    var word: String
+    var scrabbleScore: Int
+    var definitionExists: Bool
 
-    public init(name: String) {
-        self.name = name
+    public init(word: String, scrabbleScore: Int, definitionExists: Bool) {
+        self.word = word
+        self.scrabbleScore = scrabbleScore
+        self.definitionExists = definitionExists
+    }
+
+    public static func ==(lhs: Word, rhs: Word) -> Bool {
+        return lhs.word == rhs.word
     }
 }

@@ -1,5 +1,6 @@
 import UIKit
 import SnapKit
+import FirebaseAuth
 
 class MainViewController: UIViewController {
 
@@ -9,26 +10,42 @@ class MainViewController: UIViewController {
     private var clearTextFieldButton: UIButton!
     private var searchButton: UIButton!
     private var textFieldLine: UIView!
-
     private var tableView: UITableView!
-    private var filterButton: UIButton!
+//    private var filterButton: UIButton!
+    private var noResultsLabel: UILabel!
+    private var infoLabel: UILabel!
+    private var dividerView: UIView!
 
     // MARK: Attributes
+    private var unscrambler: UnScrambler!
     private var data: [Section] = [Section]()
+    private let rowHeight: CGFloat = 40.0
+    private let headerHeight: CGFloat = 44.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        Auth.auth().signInAnonymously() { user, error in
+            print(error)
+        }
+
         view.backgroundColor = .white
+        unscrambler = UnScrambler()
 
         setupView()
         setupNavigationBar()
         addConstraints()
+        textFieldDidChange()
 
-        let section1 = Section(name: "Section1", items: [Item(name: "word"), Item(name: "word"), Item(name: "word"), Item(name: "word"), Item(name: "word")])
-        let section2 = Section(name: "Section2", items: [Item(name: "word"), Item(name: "word"), Item(name: "word"), Item(name: "word"), Item(name: "word")])
-        let section3 = Section(name: "Section3", items: [Item(name: "word"), Item(name: "word"), Item(name: "word"), Item(name: "word"), Item(name: "word")])
-        data.append(contentsOf: [section1, section2, section3])
+        // Hide keyboard tap gesture
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard(_:)))
+        tap.numberOfTouchesRequired = 1
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+
+        // TODO Remove
+        textField.text = "abalation"
+        searchButtonAction()
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -50,16 +67,74 @@ class MainViewController: UIViewController {
     }
 
     @objc private func clearTextFieldButtonAction() {
-
+        textField.text = ""
+        textFieldDidChange()
     }
 
     @objc private func searchButtonAction() {
-
+        textField.resignFirstResponder()
+        data = unscrambler.unscrambleWord(textField.text!)
+        tableView.reloadData()
+        toggleNoResultsLabel()
+        infoLabel.text = getInfoLabel(textField.text!)
     }
 
-    @objc private func filterButtonAction() {
-
+    @objc private func cellInfoButtonAction(_ button: UIButton) {
+        let array = (button.accessibilityIdentifier?.split(separator: ","))!
+        if let section = Int(array[0]), let row = Int(array[1]) {
+            let word = data[section].words[row]
+            let viewController = DefinitionViewController()
+            viewController.word = word.word
+            viewController.providesPresentationContextTransitionStyle = true
+            viewController.definesPresentationContext = true
+            viewController.modalPresentationStyle = .overFullScreen
+            viewController.modalTransitionStyle = .crossDissolve
+            navigationController?.present(viewController, animated: true)
+        }
     }
+
+    @objc private func textFieldDidChange() {
+        toggleClearButton()
+    }
+
+    @objc private func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        let location = sender.location(in: self.textFieldView)
+
+        if !textFieldView.frame.contains(location) || searchButton.frame.contains(location) {
+            view.endEditing(true)
+        }
+    }
+
+    private func toggleClearButton() {
+        let isEmpty = textField.text == ""
+        clearTextFieldButton.isHidden = isEmpty
+
+        clearTextFieldButton.snp.updateConstraints { maker in
+            maker.width.equalTo(isEmpty ? 0 : 48)
+        }
+    }
+
+    private func toggleNoResultsLabel() {
+        noResultsLabel.isHidden = data.count > 0
+    }
+
+    private func getInfoLabel(_ word: String) -> String {
+        var totalWords = 0
+        data.forEach { section in
+            totalWords += section.words.count
+        }
+
+        return "\(totalWords) words found with letters '\(word)'"
+    }
+
+/*    @objc private func filterButtonAction() {
+        let filterViewController = FilterViewController()
+        filterViewController.providesPresentationContextTransitionStyle = true
+        filterViewController.definesPresentationContext = true
+        filterViewController.modalPresentationStyle = .overFullScreen
+        filterViewController.modalTransitionStyle = .crossDissolve
+        navigationController?.present(filterViewController, animated: true)
+    }*/
 }
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
@@ -68,39 +143,50 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data[section].collapsed ? 0 : data[section].items.count
+        return data[section].collapsed ? 0 : data[section].words.count
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? WordTableViewCell ?? WordTableViewCell(style: .default, reuseIdentifier: "cell")
 
-        let item: Item = data[indexPath.section].items[indexPath.row]
+        let item: Word = data[indexPath.section].words[indexPath.row]
 
-        cell.nameLabel.text = item.name
+        cell.nameLabel.text = item.word
+        cell.infoButton.addTarget(self, action: #selector(cellInfoButtonAction(_:)), for: .touchUpInside)
+        cell.infoButton.accessibilityIdentifier = "\(indexPath.section),\(indexPath.row)"
+        cell.infoButton.isHidden = !item.definitionExists
 
         return cell
     }
 
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+        return rowHeight
     }
 
     // Header
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableCell(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
 
-        header.titleLabel.text = data[section].name
+        header.titleLabel.text = data[section].headerName
         header.section = section
         header.delegate = self
         return header
     }
 
     public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44.0
+        return headerHeight
     }
 
     public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 1.0
+    }
+}
+
+extension MainViewController: UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        searchButtonAction()
+        return true
     }
 }
 
@@ -120,21 +206,26 @@ extension MainViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.isOpaque = false
         navigationController?.navigationBar.layer.masksToBounds = false
-        navigationController?.navigationBar.layer.shadowColor = UIColor(hex: 0xbdbdbd).cgColor
+        navigationController?.navigationBar.layer.shadowColor = UIColor.navigationBarShadow.cgColor
         navigationController?.navigationBar.layer.shadowOpacity = 0.8
         navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         navigationController?.navigationBar.layer.shadowRadius = 2
 
         // Title
-        navigationController?.navigationBar.topItem?.title = "Unscramble"
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: Font.AlegreyaSans.bold(with: 32),
-                                                                   NSAttributedString.Key.foregroundColor: UIColor.white]
+        let titleLabel = UILabel()
+        titleLabel.text = Message.UNSCRAMBLE
+        titleLabel.font = Font.AlegreyaSans.bold(with: 32)
+        titleLabel.textColor = .white
+        titleLabel.textAlignment = .center
+        navigationItem.titleView = titleLabel
 
+        // Settings
         let settingButton = UIButton(type: .custom)
         settingButton.setImage(Icon.setting_24, for: .normal)
         settingButton.imageView?.tintColor = .white
         settingButton.addTarget(self, action: #selector(settingButtonAction), for: .touchUpInside)
 
+        // Donate
         let supportButton = UIButton(type: .custom)
         supportButton.setImage(Icon.support_24, for: .normal)
         supportButton.imageView?.tintColor = .white
@@ -143,6 +234,7 @@ extension MainViewController {
         let space = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         space.width = 16
 
+        // Right bar buttons
         navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: settingButton), space, UIBarButtonItem(customView: supportButton)]
     }
 
@@ -179,20 +271,39 @@ extension MainViewController {
             maker.height.equalTo(2)
         }
 
+        infoLabel.snp.makeConstraints { maker in
+            maker.left.equalToSuperview().offset(20)
+            maker.right.equalToSuperview().inset(12)
+            maker.top.equalTo(textFieldView.snp.bottom).offset(12)
+            maker.height.equalTo(24)
+        }
+
+        dividerView.snp.makeConstraints { maker in
+            maker.left.right.equalToSuperview()
+            maker.top.equalTo(infoLabel.snp.bottom).offset(6)
+            maker.height.equalTo(1)
+        }
+
         tableView.snp.makeConstraints { maker in
             maker.left.equalToSuperview().offset(12)
             maker.right.equalToSuperview().inset(12)
-            maker.top.equalTo(textFieldView.snp.bottom).offset(12)
+            maker.top.equalTo(dividerView.snp.bottom).offset(12)
             maker.bottom.equalTo(self.view.layoutMarginsGuide.snp.bottom)
         }
 
-        filterButton.snp.makeConstraints { maker in
-            maker.right.equalToSuperview().inset(12)
-            maker.bottom.equalTo(self.view.layoutMarginsGuide.snp.bottom)
-            maker.size.equalTo(56)
-//            maker.centerX.equalToSuperview()
-//            maker.top.bottom.equalToSuperview()
-//            maker.width.equalTo(136)
+//        filterButton.snp.makeConstraints { maker in
+//            maker.right.equalToSuperview().inset(12)
+//            maker.bottom.equalTo(self.view.layoutMarginsGuide.snp.bottom)
+//            maker.size.equalTo(56)
+////            maker.centerX.equalToSuperview()
+////            maker.top.bottom.equalToSuperview()
+////            maker.width.equalTo(136)
+//        }
+
+        noResultsLabel.snp.makeConstraints { maker in
+            maker.center.equalToSuperview()
+            maker.height.equalTo(noResultsLabel.intrinsicContentSize.height*2)
+            maker.width.equalTo(noResultsLabel.intrinsicContentSize.width)
         }
     }
 
@@ -202,15 +313,19 @@ extension MainViewController {
         view.addSubview(textFieldView)
 
         textField = TextField()
+        textField.delegate = self
         textField.attributedPlaceholder = NSAttributedString(string: Message.TEXT_FIELD_PLACE_HOLDER,
-                attributes: [NSAttributedString.Key.foregroundColor: UIColor(hex: 0xbdbdbd)])
+                attributes: [NSAttributedString.Key.foregroundColor: UIColor.placeHolder])
         textField.font = Font.AlegreyaSans.medium(with: 24)
         textField.textColor = .app
         textField.tintColor = .app
+        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        textField.returnKeyType = .search
+        textField.autocapitalizationType = .none
         textFieldView.addSubview(textField)
 
         searchButton = UIButton()
-        searchButton.backgroundColor = .clear //UIColor(hex: 0x0039cb)
+        searchButton.backgroundColor = .clear
         searchButton.setImage(Icon.search_24, for: .normal)
         searchButton.imageView?.tintColor = .highlight
         searchButton.addTarget(self, action: #selector(searchButtonAction), for: .touchUpInside)
@@ -230,23 +345,42 @@ extension MainViewController {
         tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 44.0
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = rowHeight
+        tableView.rowHeight = rowHeight
         tableView.backgroundColor = .clear
-        tableView.layer.cornerRadius = 6
+        tableView.layer.cornerRadius = 4
         tableView.bounces = false
         tableView.tableFooterView = UIView()
         view.addSubview(tableView)
 
-        filterButton = UIButton()
-        filterButton.backgroundColor = .app
-        filterButton.setImage(Icon.filter_24, for: .normal)
-        filterButton.imageView?.tintColor = .white
-//        filterButton.setTitle("  Filter", for: .normal)
-//        filterButton.setTitleColor(.white, for: .normal)
-//        filterButton.titleLabel?.font = Font.AlegreyaSans.medium(with: 22)
-        filterButton.addShadow(cornerRadius: 28)
-        filterButton.addTarget(self, action: #selector(filterButtonAction), for: .touchUpInside)
-        view.addSubview(filterButton)
+//        filterButton = UIButton()
+//        filterButton.backgroundColor = .app
+//        filterButton.setImage(Icon.filter_24, for: .normal)
+//        filterButton.imageView?.tintColor = .white
+////        filterButton.setTitle("  Filter", for: .normal)
+////        filterButton.setTitleColor(.white, for: .normal)
+////        filterButton.titleLabel?.font = Font.AlegreyaSans.medium(with: 22)
+//        filterButton.addShadow(cornerRadius: 28)
+//        filterButton.addTarget(self, action: #selector(filterButtonAction), for: .touchUpInside)
+//        view.addSubview(filterButton)
+
+        noResultsLabel = UILabel()
+        noResultsLabel.text = Message.NO_RESULTS
+        noResultsLabel.textColor = .app
+        noResultsLabel.textAlignment = .center
+        noResultsLabel.font = Font.AlegreyaSans.bold(with: 24)
+        noResultsLabel.numberOfLines = 2
+        view.addSubview(noResultsLabel)
+
+        infoLabel = UILabel()
+        infoLabel.textColor = .app
+        infoLabel.textAlignment = .left
+        infoLabel.font = Font.AlegreyaSans.medium(with: 20 )
+        view.addSubview(infoLabel)
+
+        dividerView = UIView()
+        dividerView.backgroundColor = .divider2
+        view.addSubview(dividerView)
+
     }
 }

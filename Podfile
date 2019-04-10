@@ -8,8 +8,14 @@ target 'Word Unscrambler' do
   # Pods for Word Unscrambler
   pod 'Google-Mobile-Ads-SDK'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
   pod 'SnapKit'
   pod 'MaterialComponents'
+  pod 'lottie-ios'
+  pod 'BEMCheckBox'
 
   target 'Word UnscramblerTests' do
     inherit! :search_paths

@@ -25,7 +25,8 @@ class WebViewController: UIViewController, GADBannerViewDelegate {
         view.addSubview(webView)
         
         adBannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        adBannerView.adUnitID = "ca-app-pub-6364543110450580/1349792967"
+        // TODO
+        adBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"//"ca-app-pub-6364543110450580/1349792967"
         adBannerView.delegate = self
         adBannerView.rootViewController = self
         self.view.addSubview(adBannerView)

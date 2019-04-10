@@ -143,6 +143,9 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework"
@@ -150,10 +153,20 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework"
@@ -161,7 +174,14 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

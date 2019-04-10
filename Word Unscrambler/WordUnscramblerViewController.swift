@@ -165,7 +165,8 @@ class WordUnscramblerViewController: UIViewController, UITextFieldDelegate, UITa
     
     private func initializeAdBanner() {
         adBannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        adBannerView.adUnitID = "ca-app-pub-6364543110450580/1349792967"
+        // TODO Remove this
+        adBannerView.adUnitID = "ca-app-pub-6364543110450580/1349792967"//"ca-app-pub-6364543110450580/1349792967"
         adBannerView.delegate = self
         adBannerView.rootViewController = self
         self.view.addSubview(adBannerView)
