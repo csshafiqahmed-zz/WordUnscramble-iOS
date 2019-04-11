@@ -1,6 +1,8 @@
 import UIKit
 
-class UnScrambler {
+public class UnScrambler {
+
+    private static var unscrambler: UnScrambler!
 
     public private(set) var allWords = Set<String>()
     public private(set) var wordsWithDefinitions = Set<String>()
@@ -8,10 +10,17 @@ class UnScrambler {
     public private(set) var scrabbleCharacterPointsArray = [Character: Int]()
     public private(set) var sortedWordsDictionary = [String: [String]]()
 
-    init() {
+    private init() {
         loadWordsFromFile()
         setupScrabbleCharacterPointsArray()
         parseWordsToDictionary()
+    }
+
+    public static func getInstance() -> UnScrambler {
+        if unscrambler == nil {
+            unscrambler = UnScrambler()
+        }
+        return unscrambler
     }
 
     private func loadWordsFromFile() {
@@ -68,6 +77,7 @@ class UnScrambler {
     }
 
     public func unscrambleWord(_ unscrambledWord: String) -> [Section] {
+        let staredWordsController = StaredWordsController.getInstance()
         var scrambledWords = [Section]()
         let sortedWord = String(cleanWord(unscrambledWord).sorted())
         // Iterate from 2 -> Length of unscrambledWord
@@ -81,7 +91,7 @@ class UnScrambler {
                 // Get possible words from dictionary of words
                 if let unscrambledWords: [String] = sortedWordsDictionary[String(String(w).sorted())] {
                     unscrambledWords.forEach { s in
-                        let newWord = Word(word: s, scrabbleScore: 0, definitionExists: wordsWithDefinitions.contains(s))
+                        let newWord = Word(word: s, scrabbleScore: 0, definitionExists: wordsWithDefinitions.contains(s), stared: staredWordsController.isWordStared(s))
                         if !words.contains(newWord) {
                             words.append(newWord)
                         }
@@ -95,6 +105,10 @@ class UnScrambler {
             }
         }
         return scrambledWords
+    }
+    
+    public func doesDefinitionExistsForWord(_ word: String) -> Bool {
+        return wordsWithDefinitions.contains(word)
     }
 
     private func getFancySectionName(_ wordLength: Int) -> String {

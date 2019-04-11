@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
 
     // MARK: Attributes
     private var unscrambler: UnScrambler!
+    private var staredWordsController: StaredWordsController!
     private var data: [Section] = [Section]()
     private let rowHeight: CGFloat = 40.0
     private let headerHeight: CGFloat = 44.0
@@ -30,7 +31,8 @@ class MainViewController: UIViewController {
         }
 
         view.backgroundColor = .white
-        unscrambler = UnScrambler()
+        unscrambler = UnScrambler.getInstance()
+        staredWordsController = StaredWordsController.getInstance()
 
         setupView()
         setupNavigationBar()
@@ -56,14 +58,17 @@ class MainViewController: UIViewController {
         super.viewWillAppear(animated)
 
         setNeedsStatusBarAppearanceUpdate()
+        if tableView != nil {
+            tableView.reloadData()
+        }
     }
 
     @objc private func settingButtonAction() {
 
     }
 
-    @objc private func donateButtonAction() {
-
+    @objc private func favoriteButtonAction() {
+        navigationController?.pushViewController(FavoriteWordsViewController(), animated: true)
     }
 
     @objc private func clearTextFieldButtonAction() {
@@ -84,12 +89,25 @@ class MainViewController: UIViewController {
         if let section = Int(array[0]), let row = Int(array[1]) {
             let word = data[section].words[row]
             let viewController = DefinitionViewController()
-            viewController.word = word.word
+            viewController.word = word
             viewController.providesPresentationContextTransitionStyle = true
             viewController.definesPresentationContext = true
             viewController.modalPresentationStyle = .overFullScreen
             viewController.modalTransitionStyle = .crossDissolve
             navigationController?.present(viewController, animated: true)
+        }
+    }
+
+    @objc private func cellFavoriteButtonAction(_ button: UIButton) {
+        let array = (button.accessibilityIdentifier?.split(separator: ","))!
+        if let section = Int(array[0]), let row = Int(array[1]) {
+            let word = data[section].words[row]
+            if staredWordsController.isWordStared(word.word) {
+                staredWordsController.removeWord(word.word)
+            } else {
+                staredWordsController.addWord(word.word)
+            }
+            tableView.reloadRows(at: [IndexPath(row: row, section: section)], with: .automatic)
         }
     }
 
@@ -155,6 +173,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         cell.infoButton.addTarget(self, action: #selector(cellInfoButtonAction(_:)), for: .touchUpInside)
         cell.infoButton.accessibilityIdentifier = "\(indexPath.section),\(indexPath.row)"
         cell.infoButton.isHidden = !item.definitionExists
+
+        cell.favoriteButton.addTarget(self, action: #selector(cellFavoriteButtonAction(_:)), for: .touchUpInside)
+        cell.favoriteButton.accessibilityIdentifier = "\(indexPath.section),\(indexPath.row)"
+        cell.favoriteButton.isHidden = item.definitionExists
+        cell.toggleFavoriteButton(staredWordsController.isWordStared(item.word))
 
         return cell
     }
@@ -226,16 +249,16 @@ extension MainViewController {
         settingButton.addTarget(self, action: #selector(settingButtonAction), for: .touchUpInside)
 
         // Donate
-        let supportButton = UIButton(type: .custom)
-        supportButton.setImage(Icon.support_24, for: .normal)
-        supportButton.imageView?.tintColor = .white
-        supportButton.addTarget(self, action: #selector(donateButtonAction), for: .touchUpInside)
+        let favoriteButton = UIButton(type: .custom)
+        favoriteButton.setImage(Icon.star_24, for: .normal)
+        favoriteButton.imageView?.tintColor = .white
+        favoriteButton.addTarget(self, action: #selector(favoriteButtonAction), for: .touchUpInside)
 
         let space = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         space.width = 16
 
         // Right bar buttons
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: settingButton), space, UIBarButtonItem(customView: supportButton)]
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: settingButton), space, UIBarButtonItem(customView: favoriteButton)]
     }
 
     override func addConstraints() {
@@ -351,6 +374,7 @@ extension MainViewController {
         tableView.layer.cornerRadius = 4
         tableView.bounces = false
         tableView.tableFooterView = UIView()
+        tableView.register(WordTableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
 
 //        filterButton = UIButton()

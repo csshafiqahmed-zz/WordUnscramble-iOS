@@ -35,6 +35,8 @@
 		192E45DD500340878E954655 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4DBB91D2EF43DE20F7A0 /* Icon.swift */; };
 		192E4675EE23C8E24F9BB9FE /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E44C9AACF1F6A94913DFA /* Default.swift */; };
 		192E469D237414FBDFC60A9A /* AlegreyaSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */; };
+		192E479832318BEDB32B9DDF /* StaredWordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E428E9661B2A5FF95BC2F /* StaredWordsController.swift */; };
+		192E47DA5B7EB3C8E71CA548 /* FavoriteWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45A737DF5C57DB5CEE51 /* FavoriteWordsViewController.swift */; };
 		192E47F555D76A6722749AA6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4D0D84EB18B88AA3D04A /* Color.swift */; };
 		192E4827FD40BFCE90A6FE08 /* DefinitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4418BB8F1D6593181D8B /* DefinitionTableViewCell.swift */; };
 		192E4A1AC6DE1026B9E71B16 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */; };
@@ -98,6 +100,7 @@
 		10DD00461D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10E18DC21DB1DF52004F6491 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		192E41363D0C1D9F2C4E3263 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		192E428E9661B2A5FF95BC2F /* StaredWordsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaredWordsController.swift; sourceTree = "<group>"; };
 		192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Medium.ttf"; sourceTree = "<group>"; };
 		192E42F7E1E291B4A2CC30EC /* loading_seesaw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_seesaw.json; sourceTree = "<group>"; };
 		192E43487310E4C647F5F76A /* valid_words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = valid_words.txt; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 		192E45082A2439BDC45A40A1 /* FetchDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchDefinition.swift; sourceTree = "<group>"; };
 		192E45300D3668AAD0815BD4 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		192E45551F2A85F8D4058B7A /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		192E45A737DF5C57DB5CEE51 /* FavoriteWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWordsViewController.swift; sourceTree = "<group>"; };
 		192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Bold.ttf"; sourceTree = "<group>"; };
 		192E47625FD846327F5913BA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		192E47CE3AEAC74C20606CFA /* loading_cubes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_cubes.json; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 				192E49056F848F67B81FF008 /* FirebaseReference.swift */,
 				192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */,
 				192E4C42C3927914F68D7A56 /* DefinitionCacheController.swift */,
+				192E428E9661B2A5FF95BC2F /* StaredWordsController.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 				192E4D835E278916A818DBF4 /* MainViewController.swift */,
 				192E4ED948876667F9ED5BC9 /* FilterViewController.swift */,
 				192E45300D3668AAD0815BD4 /* DefinitionViewController.swift */,
+				192E45A737DF5C57DB5CEE51 /* FavoriteWordsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -676,6 +682,8 @@
 				192E4F7D81B59E4794769EA3 /* LottieAnimation.swift in Sources */,
 				192E42925ACDE98E526F934B /* DefinitionCacheController.swift in Sources */,
 				192E4D9DE4CD715BEECBF404 /* Device.swift in Sources */,
+				192E479832318BEDB32B9DDF /* StaredWordsController.swift in Sources */,
+				192E47DA5B7EB3C8E71CA548 /* FavoriteWordsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

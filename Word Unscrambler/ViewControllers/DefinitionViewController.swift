@@ -17,12 +17,12 @@ class DefinitionViewController: UIViewController {
     private var animationView: LOTAnimationView!
 
     // MARK: Attributes
-    public var word: String = ""
+    public var word: Word!
     private var firebaseWord: FirebaseWord?
     private var definitions = [String]()
     private var initialTouchPoint: CGPoint = CGPoint(x: 0,y: 0)
     private var definitionCacheController: DefinitionCacheController!
-
+    private var staredWordsController: StaredWordsController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +38,11 @@ class DefinitionViewController: UIViewController {
         // pan gesture
         view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(panGestureRecognizerHandler(_:))))
 
+        staredWordsController = StaredWordsController.getInstance()
+        word.stared = staredWordsController.isWordStared(word.word)
+
         definitionCacheController = DefinitionCacheController.getInstance()
-        definitionCacheController.getDefinitionForWord(word) { completion in
+        definitionCacheController.getDefinitionForWord(word.word) { completion in
             switch completion {
             case .success(let word):
                 self.firebaseWord = word
@@ -60,6 +63,7 @@ class DefinitionViewController: UIViewController {
             titleLabel.text = getTitleLabelText()
             phoneticLabel.text = getPhoneticLabelText()
             definitions = getListOfDefinitions()
+            toggleFavoriteButton()
 
             titleLabel.snp.updateConstraints { maker in
                 maker.height.equalTo(titleLabel.intrinsicContentSize.height)
@@ -81,7 +85,7 @@ class DefinitionViewController: UIViewController {
         if let firebaseWord = firebaseWord, let syllable = firebaseWord.syllable, syllable != "" {
             return syllable
         }
-        return word
+        return word.word
     }
 
     private func getPhoneticLabelText() -> String {
@@ -127,7 +131,6 @@ class DefinitionViewController: UIViewController {
         height += bottomLayoutMargin
 
         let maxHeight = view.frame.height * 0.6
-        print(height)
         return min(height, maxHeight)
     }
 
@@ -154,6 +157,21 @@ class DefinitionViewController: UIViewController {
                 })
             }
         }
+    }
+
+    @objc private func favoriteButtonAction() {
+        if word.stared {
+            staredWordsController.removeWord(word.word)
+        } else {
+            staredWordsController.addWord(word.word)
+        }
+        word.stared = !word.stared
+        toggleFavoriteButton()
+    }
+
+    private func toggleFavoriteButton() {
+        let image = word.stared ? Icon.star_24 : Icon.star_outline_24
+        favoriteButton.setImage(image, for: .normal)
     }
 }
 
@@ -216,6 +234,7 @@ extension DefinitionViewController {
         favoriteButton = UIButton()
         favoriteButton.setImage(Icon.star_outline_24, for: .normal)
         favoriteButton.imageView?.tintColor = .app
+        favoriteButton.addTarget(self, action: #selector(favoriteButtonAction), for: .touchUpInside)
         favoriteButton.isHidden = true
         alertView.addSubview(favoriteButton)
 
