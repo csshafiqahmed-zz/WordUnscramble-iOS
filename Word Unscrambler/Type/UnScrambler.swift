@@ -64,15 +64,13 @@ public class UnScrambler {
     }
 
     private func parseWordsToDictionary() {
-        DispatchQueue.main.async {
-            self.allWords.forEach { word in
-                let sortedWord = String(word.sorted())
+        self.allWords.forEach { word in
+            let sortedWord = String(word.sorted())
 
-                if self.sortedWordsDictionary.keys.contains(sortedWord) {
-                    self.sortedWordsDictionary[sortedWord]?.append(word)
-                } else {
-                    self.sortedWordsDictionary[sortedWord] = [word]
-                }
+            if self.sortedWordsDictionary.keys.contains(sortedWord) {
+                self.sortedWordsDictionary[sortedWord]?.append(word)
+            } else {
+                self.sortedWordsDictionary[sortedWord] = [word]
             }
         }
     }

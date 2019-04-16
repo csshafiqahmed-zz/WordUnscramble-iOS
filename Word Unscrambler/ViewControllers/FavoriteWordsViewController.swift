@@ -1,10 +1,12 @@
 import UIKit
 import SnapKit
+import GoogleMobileAds
 
 class FavoriteWordsViewController: UIViewController {
 
     // MARK: UIElements
     private var tableView: UITableView!
+    private var adBannerView: GADBannerView!
 
     // MARK: Attributes
     private var staredWordsController: StaredWordsController!
@@ -22,6 +24,9 @@ class FavoriteWordsViewController: UIViewController {
         setupView()
         setupNavigationBar()
         addConstraints()
+
+        //
+        adBannerView.load(GADRequest())
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -74,6 +79,18 @@ extension FavoriteWordsViewController: DefinitionViewControllerDelegate {
         let viewController = WebDefinitionsViewController()
         viewController.word = word
         navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
+extension FavoriteWordsViewController: GADBannerViewDelegate {
+    public func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        // todo log event
+    }
+
+    // Todo log more events on ad click, check delegate for methods
+
+    public func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+        // todo log event
     }
 }
 
@@ -161,12 +178,23 @@ extension FavoriteWordsViewController {
         tableView.bounces = false
         tableView.tableFooterView = UIView()
         view.addSubview(tableView)
+
+        adBannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        adBannerView.adUnitID = Default.ADMOB_AD_UNIT_ID
+        adBannerView.delegate = self
+        adBannerView.rootViewController = self
+        view.addSubview(adBannerView)
     }
 
     override func addConstraints() {
+        adBannerView.snp.makeConstraints { maker in
+            maker.left.right.bottom.equalToSuperview()
+            maker.height.equalTo(64)
+        }
+
         tableView.snp.makeConstraints { maker in
             maker.top.left.right.equalToSuperview()
-            maker.bottom.equalTo(self.view.layoutMarginsGuide.snp.bottom)
+            maker.bottom.equalTo(adBannerView.snp.top).inset(-4)
         }
     }
 }

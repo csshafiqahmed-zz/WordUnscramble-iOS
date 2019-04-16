@@ -1,6 +1,7 @@
 import UIKit
 import SnapKit
 import FirebaseAuth
+import GoogleMobileAds
 
 class MainViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class MainViewController: UIViewController {
     private var noResultsLabel: UILabel!
     private var infoLabel: UILabel!
     private var dividerView: UIView!
+    private var adBannerView: GADBannerView!
 
     // MARK: Attributes
     private var unscrambler: UnScrambler!
@@ -44,6 +46,9 @@ class MainViewController: UIViewController {
         tap.numberOfTouchesRequired = 1
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
+
+        //
+        adBannerView.load(GADRequest())
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -160,6 +165,18 @@ class MainViewController: UIViewController {
         filterViewController.modalTransitionStyle = .crossDissolve
         navigationController?.present(filterViewController, animated: true)
     }*/
+}
+
+extension MainViewController: GADBannerViewDelegate {
+    public func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        // todo log event
+    }
+
+    // Todo log more events on ad click, check delegate for methods
+
+    public func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+        // todo log event
+    }
 }
 
 extension MainViewController:DefinitionViewControllerDelegate {
@@ -326,11 +343,16 @@ extension MainViewController {
             maker.height.equalTo(1)
         }
 
+        adBannerView.snp.makeConstraints { maker in
+            maker.left.right.bottom.equalToSuperview()
+            maker.height.equalTo(64)
+        }
+
         tableView.snp.makeConstraints { maker in
             maker.left.equalToSuperview().offset(12)
             maker.right.equalToSuperview().inset(12)
             maker.top.equalTo(dividerView.snp.bottom).offset(12)
-            maker.bottom.equalTo(self.view.layoutMarginsGuide.snp.bottom)
+            maker.bottom.equalTo(adBannerView.snp.top).inset(-4)
         }
 
 //        filterButton.snp.makeConstraints { maker in
@@ -426,5 +448,10 @@ extension MainViewController {
         dividerView.backgroundColor = .divider2
         view.addSubview(dividerView)
 
+        adBannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        adBannerView.adUnitID = Default.ADMOB_AD_UNIT_ID
+        adBannerView.delegate = self
+        adBannerView.rootViewController = self
+        view.addSubview(adBannerView)
     }
 }

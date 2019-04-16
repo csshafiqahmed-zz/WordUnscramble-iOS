@@ -1,10 +1,12 @@
 import UIKit
 import SnapKit
+import GoogleMobileAds
 
 class WebDefinitionsViewController: UIViewController {
 
     // MARK: UIElements
     private var collectionView: UICollectionView!
+    private var adBannerView: GADBannerView!
 
     // MARK: Attributes
     public var word: String = "Word"
@@ -17,6 +19,9 @@ class WebDefinitionsViewController: UIViewController {
         setupNavigationBar()
         setupView()
         addConstraints()
+
+        //
+        adBannerView.load(GADRequest())
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -25,6 +30,18 @@ class WebDefinitionsViewController: UIViewController {
 
     @objc private func backButtonAction() {
         navigationController?.popViewController(animated: true)
+    }
+}
+
+extension WebDefinitionsViewController: GADBannerViewDelegate {
+    public func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        // todo log event
+    }
+
+    // Todo log more events on ad click, check delegate for methods
+
+    public func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+        // todo log event
     }
 }
 
@@ -52,7 +69,7 @@ extension WebDefinitionsViewController: UICollectionViewDelegate, UICollectionVi
     }
 
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 16, left: 8, bottom: 32, right: 8)
+        return UIEdgeInsets(top: 0, left: 8, bottom: 32, right: 8)
     }
 }
 
@@ -96,12 +113,23 @@ extension WebDefinitionsViewController {
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
         view.addSubview(collectionView)
+
+        adBannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        adBannerView.adUnitID = Default.ADMOB_AD_UNIT_ID
+        adBannerView.delegate = self
+        adBannerView.rootViewController = self
+        view.addSubview(adBannerView)
     }
 
     override func addConstraints() {
+        adBannerView.snp.makeConstraints { maker in
+            maker.left.right.bottom.equalToSuperview()
+            maker.height.equalTo(64)
+        }
+
         collectionView.snp.makeConstraints { maker in
             maker.top.left.right.equalToSuperview()
-            maker.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            maker.bottom.equalTo(adBannerView.snp.top)
         }
     }
 }
