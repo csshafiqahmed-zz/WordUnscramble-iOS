@@ -11,6 +11,7 @@ class WordTableViewCell: UITableViewCell {
     let nameLabel = UILabel()
     let infoButton = UIButton()
     let favoriteButton = UIButton()
+    let moreDefinitionsButton = UIButton()
     let wordButton = UIButton()
 
     override init(style: CellStyle, reuseIdentifier: String?) {
@@ -35,13 +36,19 @@ class WordTableViewCell: UITableViewCell {
         infoButton.snp.makeConstraints { maker in
             maker.top.bottom.equalToSuperview()
             maker.right.equalToSuperview().inset(8)
-            maker.width.equalTo(contentView.frame.height * 1.5)
+            maker.width.equalTo(contentView.frame.height * 1)
+        }
+
+        moreDefinitionsButton.snp.makeConstraints { maker in
+            maker.top.bottom.equalToSuperview()
+            maker.right.equalToSuperview().inset(8)
+            maker.width.equalTo(contentView.frame.height)
         }
 
         favoriteButton.snp.makeConstraints { maker in
             maker.top.bottom.equalToSuperview()
-            maker.right.equalToSuperview().inset(8)
-            maker.width.equalTo(contentView.frame.height * 1.5)
+            maker.right.equalTo(moreDefinitionsButton.snp.left).inset(0)
+            maker.width.equalTo(contentView.frame.height)
         }
     }
 
@@ -59,6 +66,10 @@ class WordTableViewCell: UITableViewCell {
         favoriteButton.setImage(Icon.star_outline_24, for: .normal)
         favoriteButton.imageView?.tintColor = UIColor.app.withAlphaComponent(0.7)
         contentView.addSubview(favoriteButton)
+
+        moreDefinitionsButton.setImage(Icon.internet_24, for: .normal)
+        moreDefinitionsButton.imageView?.tintColor = UIColor.app.withAlphaComponent(0.7)
+        contentView.addSubview(moreDefinitionsButton)
     }
 
     public func toggleFavoriteButton(_ isMarkedFavorite: Bool) {

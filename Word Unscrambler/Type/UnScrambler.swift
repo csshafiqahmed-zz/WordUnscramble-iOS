@@ -41,7 +41,6 @@ public class UnScrambler {
             // TODO Log event
             print("Failed to load files")
         }
-        print(wordsWithDefinitions.count, wordsWithoutDefinitions.count)
     }
 
     private func setupScrabbleCharacterPointsArray() {
@@ -65,13 +64,15 @@ public class UnScrambler {
     }
 
     private func parseWordsToDictionary() {
-        self.allWords.forEach { word in
-            let sortedWord = String(word.sorted())
+        DispatchQueue.main.async {
+            self.allWords.forEach { word in
+                let sortedWord = String(word.sorted())
 
-            if self.sortedWordsDictionary.keys.contains(sortedWord) {
-                self.sortedWordsDictionary[sortedWord]?.append(word)
-            } else {
-                self.sortedWordsDictionary[sortedWord] = [word]
+                if self.sortedWordsDictionary.keys.contains(sortedWord) {
+                    self.sortedWordsDictionary[sortedWord]?.append(word)
+                } else {
+                    self.sortedWordsDictionary[sortedWord] = [word]
+                }
             }
         }
     }
@@ -108,7 +109,7 @@ public class UnScrambler {
     }
     
     public func doesDefinitionExistsForWord(_ word: String) -> Bool {
-        return wordsWithDefinitions.contains(word)
+        return wordsWithDefinitions.contains(word )
     }
 
     private func getFancySectionName(_ wordLength: Int) -> String {

@@ -2,6 +2,10 @@ import UIKit
 import SnapKit
 import Lottie
 
+protocol DefinitionViewControllerDelegate: class {
+    func presentWebDefinitionsForWord(_ word: String)
+}
+
 class DefinitionViewController: UIViewController {
 
     // MARK: UIElements
@@ -17,6 +21,7 @@ class DefinitionViewController: UIViewController {
     private var animationView: LOTAnimationView!
 
     // MARK: Attributes
+    weak var delegate: DefinitionViewControllerDelegate?
     public var word: Word!
     private var firebaseWord: FirebaseWord?
     private var definitions = [String]()
@@ -168,6 +173,11 @@ class DefinitionViewController: UIViewController {
         word.stared = !word.stared
         toggleFavoriteButton()
     }
+    
+    @objc private func moreDefinitionsButtonAction() {
+        dismissView()
+        delegate?.presentWebDefinitionsForWord(word.word)
+    }
 
     private func toggleFavoriteButton() {
         let image = word.stared ? Icon.star_24 : Icon.star_outline_24
@@ -223,6 +233,7 @@ extension DefinitionViewController {
         internetButton = UIButton()
         internetButton.setImage(Icon.internet_24, for: .normal)
         internetButton.imageView?.tintColor = .app
+        internetButton.addTarget(self, action: #selector(moreDefinitionsButtonAction), for: .touchUpInside)
         internetButton.isHidden = true
         alertView.addSubview(internetButton)
 

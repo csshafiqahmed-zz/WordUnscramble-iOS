@@ -37,6 +37,7 @@ class FavoriteWordsViewController: UIViewController {
             let word = words[row]
             let viewController = DefinitionViewController()
             viewController.word = word
+            viewController.delegate = self
             viewController.providesPresentationContextTransitionStyle = true
             viewController.definesPresentationContext = true
             viewController.modalPresentationStyle = .overFullScreen
@@ -57,6 +58,23 @@ class FavoriteWordsViewController: UIViewController {
             tableView.reloadData()
         }
     }
+    
+    @objc private func cellMoreDefinitionsButtonAction(_ button: UIButton) {
+        if let row = Int(button.accessibilityIdentifier!) {
+            let word = words[row]
+            let viewController = WebDefinitionsViewController()
+            viewController.word = word.word
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+}
+
+extension FavoriteWordsViewController: DefinitionViewControllerDelegate {
+    func presentWebDefinitionsForWord(_ word: String) {
+        let viewController = WebDefinitionsViewController()
+        viewController.word = word
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 extension FavoriteWordsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -76,6 +94,10 @@ extension FavoriteWordsViewController: UITableViewDelegate, UITableViewDataSourc
         cell.favoriteButton.accessibilityIdentifier = "\(indexPath.row)"
         cell.favoriteButton.isHidden = words[indexPath.row].definitionExists
         cell.toggleFavoriteButton(staredWordsController.isWordStared(words[indexPath.row].word))
+
+        cell.moreDefinitionsButton.isHidden = words[indexPath.row].definitionExists
+        cell.moreDefinitionsButton.addTarget(self, action: #selector(cellMoreDefinitionsButtonAction(_:)), for: .touchUpInside)
+        cell.moreDefinitionsButton.accessibilityIdentifier = "\(indexPath.row)"
 
         return cell
     }

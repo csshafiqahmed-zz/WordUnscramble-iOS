@@ -5,16 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcworkspace/xcuserdata/satishboggarapu.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler.xcworkspace/xcuserdata/satishboggarapu.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/ic_settings_36pt.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/ic_settings_36pt.imageset/ic_settings_36pt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/ic_settings_36pt.imageset/ic_settings_36pt_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Assets.xcassets/ic_settings_36pt.imageset/ic_settings_36pt_3x.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Word Unscrambler/Cells/WordTableViewCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Cells/WordTableViewCell.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Type/Section.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Type/Section.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Util/Message.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Util/Message.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Word_Unscrambler-haqyplpgynzwvxeaoxdbhjmchdji/" />
@@ -26,14 +20,26 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6A483559-FC35-4A80-B8BC-F8B64239B141" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49147728">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/WebDefinitionsViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="558">
-                  <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+                <state relative-caret-position="450">
+                  <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="29" column="90" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="90" />
+                  <folding>
+                    <element signature="e#0#2#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -41,30 +47,22 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Word Unscrambler/Cells/WordTableViewCell.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="797">
-                  <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+                <state relative-caret-position="449">
+                  <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
                 </state>
               </provider>
             </entry>
           </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift">
+            <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-487">
-                  <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Message.swift">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+                <state relative-caret-position="559">
+                  <caret line="174" column="25" lean-forward="true" selection-start-line="174" selection-start-column="25" selection-end-line="174" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#8775#10561#0" />
+                    <element signature="e#10567#13134#0" />
+                    <element signature="e#13140#16535#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -72,8 +70,57 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="971">
-                  <caret line="110" column="49" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
+                <state relative-caret-position="586">
+                  <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="861">
+                  <caret line="178" column="57" lean-forward="true" selection-start-line="178" selection-start-column="57" selection-end-line="178" selection-end-column="57" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Word Unscrambler/Cells/WebDefinitionCollectionViewCell.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="933">
+                  <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Word Unscrambler/Type/WebDefinitions.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Word Unscrambler/Type/Section.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="522">
+                  <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="827">
+                  <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
                 </state>
               </provider>
             </entry>
@@ -89,6 +136,7 @@
       <find>reloadData</find>
       <find>auto</find>
       <find>toggle</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>resultsLabel</replace>
@@ -109,7 +157,6 @@
         <option value="$PROJECT_DIR$/Word Unscrambler/Cells/CollapsibleTableViewHeader.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/Extensions/UITextFieldExtension.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/WebViewController.swift" />
-        <option value="$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/WordUnscramblerViewController.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/Util/Color.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FilterViewController.swift" />
@@ -135,14 +182,18 @@
         <option value="$PROJECT_DIR$/Word Unscrambler/Extensions/ArrayExtension.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/Firebase/FavoriteController.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/Type/Section.swift" />
-        <option value="$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift" />
-        <option value="$PROJECT_DIR$/Word Unscrambler/Util/Message.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift" />
-        <option value="$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/Firebase/StaredWordsController.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Util/Message.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Type/WebDefinitions.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/Cells/WebDefinitionCollectionViewCell.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/Cells/WordTableViewCell.swift" />
-        <option value="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/ViewControllers/WebDefinitionsViewController.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift" />
         <option value="$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift" />
+        <option value="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift" />
       </list>
     </option>
   </component>
@@ -161,7 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,25 +238,7 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
               <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
-              <item name="CompletionHandlers" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
-              <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
-              <item name="Extensions" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
-              <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
               <item name="Firebase" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Word Unscrambler" type="1d218c8b:XcodeProjectNode" />
-              <item name="Word Unscrambler" type="fcab9f18:XcodeViewNode" />
-              <item name="LottieAnimations" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -242,6 +274,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -298,12 +331,16 @@
       <workItem from="1554564698850" duration="26182000" />
       <workItem from="1554813465048" duration="5190000" />
       <workItem from="1554896832823" duration="18162000" />
-      <workItem from="1554996988026" duration="5975000" />
+      <workItem from="1554996988026" duration="8429000" />
+      <workItem from="1555289531038" duration="3207000" />
+      <workItem from="1555293936955" duration="1192000" />
+      <workItem from="1555334525952" duration="7878000" />
+      <workItem from="1555418917468" duration="3615000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147050000" />
+    <option name="totallyTimeSpent" value="165396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-150" width="2560" height="1417" extended-state="6" />
@@ -312,10 +349,10 @@
       <window_info id="Structure" order="0" weight="0.2494043" />
       <window_info id="Designer" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.16123907" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.14058776" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2671698" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.12528302" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22339623" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -323,7 +360,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981133" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.2090566" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.20754717" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -526,23 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/AppCode2018.3/ModuleCache/10E125/5.0/arm64/iphoneos12.2/ObjectiveC.NSObject/ObjectiveC.NSObject.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#2#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/AppCode2018.3/ModuleCache/10E125/5.0/arm64/iphoneos12.2/UIKit.NSParagraphStyle/UIKit.NSParagraphStyle.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -635,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Type/Section.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -663,20 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Message.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="971">
-          <caret line="110" column="49" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Word Unscrambler/Firebase/StaredWordsController.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
@@ -691,31 +690,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift">
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Util/Message.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="173" column="52" lean-forward="true" selection-start-line="172" selection-start-column="9" selection-end-line="173" selection-end-column="52" />
+        <state relative-caret-position="108">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="29" column="90" selection-start-line="29" selection-start-column="90" selection-end-line="29" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#2#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Type/WebDefinitions.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Type/Section.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/AppCode2018.3/ModuleCache/10E125/5.0/arm64/iphoneos12.2/ObjectiveC.NSObject/ObjectiveC.NSObject.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/WebDefinitionsViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Word Unscrambler/Cells/WordTableViewCell.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="449">
+          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Cells/WebDefinitionCollectionViewCell.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="933">
+          <caret line="85" column="42" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="178" column="57" lean-forward="true" selection-start-line="178" selection-start-column="57" selection-end-line="178" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-487">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="827">
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        <state relative-caret-position="559">
+          <caret line="174" column="25" lean-forward="true" selection-start-line="174" selection-start-column="25" selection-end-line="174" selection-end-column="25" />
+          <folding>
+            <element signature="e#8775#10561#0" />
+            <element signature="e#10567#13134#0" />
+            <element signature="e#13140#16535#0" />
+          </folding>
         </state>
       </provider>
     </entry>

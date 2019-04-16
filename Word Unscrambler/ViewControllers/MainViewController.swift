@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         Auth.auth().signInAnonymously() { user, error in
-            print(error)
+
         }
 
         view.backgroundColor = .white
@@ -44,10 +44,6 @@ class MainViewController: UIViewController {
         tap.numberOfTouchesRequired = 1
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
-
-        // TODO Remove
-        textField.text = "abalation"
-        searchButtonAction()
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -90,6 +86,7 @@ class MainViewController: UIViewController {
             let word = data[section].words[row]
             let viewController = DefinitionViewController()
             viewController.word = word
+            viewController.delegate = self
             viewController.providesPresentationContextTransitionStyle = true
             viewController.definesPresentationContext = true
             viewController.modalPresentationStyle = .overFullScreen
@@ -108,6 +105,16 @@ class MainViewController: UIViewController {
                 staredWordsController.addWord(word.word)
             }
             tableView.reloadRows(at: [IndexPath(row: row, section: section)], with: .automatic)
+        }
+    }
+    
+    @objc private func cellMoreDefinitionsButtonAction(_ button: UIButton) {
+        let array = (button.accessibilityIdentifier?.split(separator: ","))!
+        if let section = Int(array[0]), let row = Int(array[1]) {
+            let word = data[section].words[row]
+            let viewController = WebDefinitionsViewController()
+            viewController.word = word.word
+            navigationController?.pushViewController(viewController, animated: true)
         }
     }
 
@@ -155,6 +162,14 @@ class MainViewController: UIViewController {
     }*/
 }
 
+extension MainViewController:DefinitionViewControllerDelegate {
+    func presentWebDefinitionsForWord(_ word: String) {
+        let viewController = WebDefinitionsViewController()
+        viewController.word = word
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+}
+
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     public func numberOfSections(in tableView: UITableView) -> Int {
         return data.count
@@ -178,6 +193,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         cell.favoriteButton.accessibilityIdentifier = "\(indexPath.section),\(indexPath.row)"
         cell.favoriteButton.isHidden = item.definitionExists
         cell.toggleFavoriteButton(staredWordsController.isWordStared(item.word))
+
+        cell.moreDefinitionsButton.isHidden = item.definitionExists
+        cell.moreDefinitionsButton.addTarget(self, action: #selector(cellMoreDefinitionsButtonAction(_:)), for: .touchUpInside)
+        cell.moreDefinitionsButton.accessibilityIdentifier = "\(indexPath.section),\(indexPath.row)"
 
         return cell
     }
@@ -373,6 +392,7 @@ extension MainViewController {
         tableView.backgroundColor = .clear
         tableView.layer.cornerRadius = 4
         tableView.bounces = false
+        tableView.showsVerticalScrollIndicator = false
         tableView.tableFooterView = UIView()
         tableView.register(WordTableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
