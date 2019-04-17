@@ -10,11 +10,13 @@ class WebDefinitionsViewController: UIViewController {
 
     // MARK: Attributes
     public var word: String = "Word"
+    private var firebaseEvents: FirebaseEvents!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .white
+        firebaseEvents = FirebaseEvents()
 
         setupNavigationBar()
         setupView()
@@ -35,13 +37,19 @@ class WebDefinitionsViewController: UIViewController {
 
 extension WebDefinitionsViewController: GADBannerViewDelegate {
     public func adViewDidReceiveAd(_ bannerView: GADBannerView) {
-        // todo log event
+        firebaseEvents.logAdLoaded()
     }
 
-    // Todo log more events on ad click, check delegate for methods
-
     public func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        // todo log event
+        firebaseEvents.logAdFailedToLoad()
+    }
+
+    public func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+        firebaseEvents.logAdClick()
+    }
+
+    public func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+        firebaseEvents.logAdClick()
     }
 }
 

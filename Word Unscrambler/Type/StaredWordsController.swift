@@ -6,10 +6,12 @@ public class StaredWordsController {
 
     private let key = "favorite_words"
     private var staredWords = [String]()
+    private var firebaseEvents: FirebaseEvents!
 
     private init() {
         let defaults = UserDefaults.standard
         staredWords = defaults.object(forKey: key) as? [String] ?? [String]()
+        firebaseEvents = FirebaseEvents()
     }
 
     public static func getInstance() -> StaredWordsController {
@@ -24,6 +26,8 @@ public class StaredWordsController {
 
         let defaults = UserDefaults.standard
         defaults.set(staredWords, forKey: key)
+
+        firebaseEvents.logAddedWordToFavorite()
     }
 
     public func removeWord(_ word: String) {
@@ -31,6 +35,8 @@ public class StaredWordsController {
 
         let defaults = UserDefaults.standard
         defaults.set(staredWords, forKey: key)
+
+        firebaseEvents.logRemovedWordFromFavorite()
     }
 
     public func isWordStared(_ word: String) -> Bool {

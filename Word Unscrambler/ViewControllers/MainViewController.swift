@@ -12,29 +12,31 @@ class MainViewController: UIViewController {
     private var searchButton: UIButton!
     private var textFieldLine: UIView!
     private var tableView: UITableView!
-//    private var filterButton: UIButton!
     private var noResultsLabel: UILabel!
     private var infoLabel: UILabel!
     private var dividerView: UIView!
     private var adBannerView: GADBannerView!
+//    private var filterButton: UIButton!
 
     // MARK: Attributes
+    private var firebaseEvents: FirebaseEvents!
     private var unscrambler: UnScrambler!
     private var staredWordsController: StaredWordsController!
     private var data: [Section] = [Section]()
     private let rowHeight: CGFloat = 40.0
     private let headerHeight: CGFloat = 44.0
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Auth.auth().signInAnonymously() { user, error in
-
-        }
+        // Firebase SignIn using AnonymousSignIn
+        Auth.auth().signInAnonymously()
 
         view.backgroundColor = .white
         unscrambler = UnScrambler.getInstance()
         staredWordsController = StaredWordsController.getInstance()
+        firebaseEvents = FirebaseEvents()
 
         setupView()
         setupNavigationBar()
@@ -47,7 +49,7 @@ class MainViewController: UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
 
-        //
+        // Load banner ad
         adBannerView.load(GADRequest())
     }
 
@@ -58,33 +60,52 @@ class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        // refresh status bar
         setNeedsStatusBarAppearanceUpdate()
+
+        // refresh tableView after topViewController is popped
         if tableView != nil {
             tableView.reloadData()
         }
     }
 
-    @objc private func settingButtonAction() {
-
-    }
-
+    /**
+        Target method for favorite button in NavigationBar.
+        Pushes to FavoriteWordsViewController on click
+     */
     @objc private func favoriteButtonAction() {
         navigationController?.pushViewController(FavoriteWordsViewController(), animated: true)
     }
 
+    /**
+        Target method for ClearTextField button in TextField
+        Clears TextField text on click and hides button
+     */
     @objc private func clearTextFieldButtonAction() {
         textField.text = ""
         textFieldDidChange()
     }
 
+    /**
+        Target method for search button in TextField
+        On click:
+            - dismisses keyboard
+            - unscrambles word to find all possible words
+            - refreshes UI once data is ready
+     */
     @objc private func searchButtonAction() {
         textField.resignFirstResponder()
         data = unscrambler.unscrambleWord(textField.text!)
         tableView.reloadData()
         toggleNoResultsLabel()
         infoLabel.text = getInfoLabel(textField.text!)
+        firebaseEvents.logUnscramble()
     }
 
+    /**
+        Target method for info button in TableViewCell
+        Presents DefinitionViewController for the selected word
+     */
     @objc private func cellInfoButtonAction(_ button: UIButton) {
         let array = (button.accessibilityIdentifier?.split(separator: ","))!
         if let section = Int(array[0]), let row = Int(array[1]) {
@@ -97,9 +118,14 @@ class MainViewController: UIViewController {
             viewController.modalPresentationStyle = .overFullScreen
             viewController.modalTransitionStyle = .crossDissolve
             navigationController?.present(viewController, animated: true)
+            firebaseEvents.logDefinitionClick()
         }
     }
 
+    /**
+        Target method for favorite button in TableViewCell
+        Adds word to favorite list if not already, else removes it if already stared
+     */
     @objc private func cellFavoriteButtonAction(_ button: UIButton) {
         let array = (button.accessibilityIdentifier?.split(separator: ","))!
         if let section = Int(array[0]), let row = Int(array[1]) {
@@ -112,7 +138,11 @@ class MainViewController: UIViewController {
             tableView.reloadRows(at: [IndexPath(row: row, section: section)], with: .automatic)
         }
     }
-    
+
+    /**
+        Target method for web button in TableViewCell
+        Presents WebDefinitionsViewController for the selected word
+     */
     @objc private func cellMoreDefinitionsButtonAction(_ button: UIButton) {
         let array = (button.accessibilityIdentifier?.split(separator: ","))!
         if let section = Int(array[0]), let row = Int(array[1]) {
@@ -120,13 +150,21 @@ class MainViewController: UIViewController {
             let viewController = WebDefinitionsViewController()
             viewController.word = word.word
             navigationController?.pushViewController(viewController, animated: true)
+            firebaseEvents.logWebDefinitionsClick()
         }
     }
 
+    /**
+        Target method TextField on editingChanged listener
+        Toggles clear button to hidden or visible
+     */
     @objc private func textFieldDidChange() {
         toggleClearButton()
     }
 
+    /**
+        Dismisses keyboard on tap gesture outside of the textField view
+     */
     @objc private func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         let location = sender.location(in: self.textFieldView)
 
@@ -135,6 +173,9 @@ class MainViewController: UIViewController {
         }
     }
 
+    /**
+        Checks if TextField is empty, if so hide the clear button, else show the button
+     */
     private func toggleClearButton() {
         let isEmpty = textField.text == ""
         clearTextFieldButton.isHidden = isEmpty
@@ -144,10 +185,17 @@ class MainViewController: UIViewController {
         }
     }
 
+    /**
+        Hides noResultsLabel if no results found for entered word, else show
+     */
     private func toggleNoResultsLabel() {
         noResultsLabel.isHidden = data.count > 0
     }
 
+    /**
+        Constructs fancy string for infoLabel once word unscrambles
+        Format: "{results_count} words found with letters {word}"
+     */
     private func getInfoLabel(_ word: String) -> String {
         var totalWords = 0
         data.forEach { section in
@@ -157,7 +205,7 @@ class MainViewController: UIViewController {
         return "\(totalWords) words found with letters '\(word)'"
     }
 
-/*    @objc private func filterButtonAction() {
+    /*    @objc private func filterButtonAction() {
         let filterViewController = FilterViewController()
         filterViewController.providesPresentationContextTransitionStyle = true
         filterViewController.definesPresentationContext = true
@@ -169,13 +217,19 @@ class MainViewController: UIViewController {
 
 extension MainViewController: GADBannerViewDelegate {
     public func adViewDidReceiveAd(_ bannerView: GADBannerView) {
-        // todo log event
+        firebaseEvents.logAdLoaded()
     }
 
-    // Todo log more events on ad click, check delegate for methods
-
     public func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        // todo log event
+        firebaseEvents.logAdFailedToLoad()
+    }
+
+    public func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+        firebaseEvents.logAdClick()
+    }
+
+    public func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+        firebaseEvents.logAdClick()
     }
 }
 
@@ -200,20 +254,21 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? WordTableViewCell ?? WordTableViewCell(style: .default, reuseIdentifier: "cell")
 
         let item: Word = data[indexPath.section].words[indexPath.row]
+        let identifier = "\(indexPath.section),\(indexPath.row)"
 
         cell.nameLabel.text = item.word
         cell.infoButton.addTarget(self, action: #selector(cellInfoButtonAction(_:)), for: .touchUpInside)
-        cell.infoButton.accessibilityIdentifier = "\(indexPath.section),\(indexPath.row)"
+        cell.infoButton.accessibilityIdentifier = identifier
         cell.infoButton.isHidden = !item.definitionExists
 
         cell.favoriteButton.addTarget(self, action: #selector(cellFavoriteButtonAction(_:)), for: .touchUpInside)
-        cell.favoriteButton.accessibilityIdentifier = "\(indexPath.section),\(indexPath.row)"
+        cell.favoriteButton.accessibilityIdentifier = identifier
         cell.favoriteButton.isHidden = item.definitionExists
         cell.toggleFavoriteButton(staredWordsController.isWordStared(item.word))
 
         cell.moreDefinitionsButton.isHidden = item.definitionExists
         cell.moreDefinitionsButton.addTarget(self, action: #selector(cellMoreDefinitionsButtonAction(_:)), for: .touchUpInside)
-        cell.moreDefinitionsButton.accessibilityIdentifier = "\(indexPath.section),\(indexPath.row)"
+        cell.moreDefinitionsButton.accessibilityIdentifier = identifier
 
         return cell
     }
@@ -222,7 +277,6 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         return rowHeight
     }
 
-    // Header
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = tableView.dequeueReusableCell(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
 
@@ -279,10 +333,10 @@ extension MainViewController {
         navigationItem.titleView = titleLabel
 
         // Settings
-        let settingButton = UIButton(type: .custom)
-        settingButton.setImage(Icon.setting_24, for: .normal)
-        settingButton.imageView?.tintColor = .white
-        settingButton.addTarget(self, action: #selector(settingButtonAction), for: .touchUpInside)
+//        let settingButton = UIButton(type: .custom)
+//        settingButton.setImage(Icon.setting_24, for: .normal)
+//        settingButton.imageView?.tintColor = .white
+//        settingButton.addTarget(self, action: #selector(settingButtonAction), for: .touchUpInside)
 
         // Donate
         let favoriteButton = UIButton(type: .custom)
@@ -294,7 +348,7 @@ extension MainViewController {
         space.width = 16
 
         // Right bar buttons
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: settingButton), space, UIBarButtonItem(customView: favoriteButton)]
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: favoriteButton)]
     }
 
     override func addConstraints() {

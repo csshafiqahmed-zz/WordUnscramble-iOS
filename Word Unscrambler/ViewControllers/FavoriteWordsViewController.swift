@@ -12,6 +12,7 @@ class FavoriteWordsViewController: UIViewController {
     private var staredWordsController: StaredWordsController!
     private let rowHeight: CGFloat = 40.0
     private var words = [Word]()
+    private var firebaseEvents: FirebaseEvents!
 
 
     override func viewDidLoad() {
@@ -20,12 +21,13 @@ class FavoriteWordsViewController: UIViewController {
         view.backgroundColor = .white
         staredWordsController = StaredWordsController.getInstance()
         words = staredWordsController.getListOfWordObjects()
+        firebaseEvents = FirebaseEvents()
 
         setupView()
         setupNavigationBar()
         addConstraints()
 
-        //
+        // Load banner ad
         adBannerView.load(GADRequest())
     }
 
@@ -48,6 +50,7 @@ class FavoriteWordsViewController: UIViewController {
             viewController.modalPresentationStyle = .overFullScreen
             viewController.modalTransitionStyle = .crossDissolve
             navigationController?.present(viewController, animated: true)
+            firebaseEvents.logDefinitionClick()
         }
     }
 
@@ -70,6 +73,7 @@ class FavoriteWordsViewController: UIViewController {
             let viewController = WebDefinitionsViewController()
             viewController.word = word.word
             navigationController?.pushViewController(viewController, animated: true)
+            firebaseEvents.logWebDefinitionsClick()
         }
     }
 }
@@ -84,13 +88,19 @@ extension FavoriteWordsViewController: DefinitionViewControllerDelegate {
 
 extension FavoriteWordsViewController: GADBannerViewDelegate {
     public func adViewDidReceiveAd(_ bannerView: GADBannerView) {
-        // todo log event
+        firebaseEvents.logAdLoaded()
     }
 
-    // Todo log more events on ad click, check delegate for methods
-
     public func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        // todo log event
+        firebaseEvents.logAdFailedToLoad()
+    }
+
+    public func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+        firebaseEvents.logAdClick()
+    }
+
+    public func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+        firebaseEvents.logAdClick()
     }
 }
 
@@ -102,19 +112,22 @@ extension FavoriteWordsViewController: UITableViewDelegate, UITableViewDataSourc
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? WordTableViewCell ?? WordTableViewCell(style: .default, reuseIdentifier: "cell")
 
-        cell.nameLabel.text = words[indexPath.row].word
-        cell.infoButton.isHidden = !words[indexPath.row].definitionExists
+        let word = words[indexPath.row]
+        let identifier = "\(indexPath.row)"
+
+        cell.nameLabel.text = word.word
+        cell.infoButton.isHidden = !word.definitionExists
         cell.infoButton.addTarget(self, action: #selector(cellInfoButtonAction(_:)), for: .touchUpInside)
-        cell.infoButton.accessibilityIdentifier = "\(indexPath.row)"
+        cell.infoButton.accessibilityIdentifier = identifier
 
         cell.favoriteButton.addTarget(self, action: #selector(cellFavoriteButtonAction(_:)), for: .touchUpInside)
-        cell.favoriteButton.accessibilityIdentifier = "\(indexPath.row)"
-        cell.favoriteButton.isHidden = words[indexPath.row].definitionExists
-        cell.toggleFavoriteButton(staredWordsController.isWordStared(words[indexPath.row].word))
+        cell.favoriteButton.accessibilityIdentifier = identifier
+        cell.favoriteButton.isHidden = word.definitionExists
+        cell.toggleFavoriteButton(staredWordsController.isWordStared(word.word))
 
-        cell.moreDefinitionsButton.isHidden = words[indexPath.row].definitionExists
+        cell.moreDefinitionsButton.isHidden = word.definitionExists
         cell.moreDefinitionsButton.addTarget(self, action: #selector(cellMoreDefinitionsButtonAction(_:)), for: .touchUpInside)
-        cell.moreDefinitionsButton.accessibilityIdentifier = "\(indexPath.row)"
+        cell.moreDefinitionsButton.accessibilityIdentifier = identifier
 
         return cell
     }
@@ -136,6 +149,7 @@ extension FavoriteWordsViewController: UITableViewDelegate, UITableViewDataSourc
             staredWordsController.removeWord(words[indexPath.row].word)
             words.remove(at: indexPath.row)
             tableView.reloadData()
+            firebaseEvents.logRemovedWordFromFavorite()
         }
     }
 }

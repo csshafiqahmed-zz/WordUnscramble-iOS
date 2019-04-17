@@ -14,11 +14,11 @@ class DefinitionViewController: UIViewController {
 
     private var titleLabel: UILabel!
     private var internetButton: UIButton!
-//    private var pronunciationButton: UIButton!
     private var favoriteButton: UIButton!
     private var phoneticLabel: UILabel!
     private var tableView: UITableView!
     private var animationView: LOTAnimationView!
+//    private var pronunciationButton: UIButton!
 
     // MARK: Attributes
     weak var delegate: DefinitionViewControllerDelegate?
@@ -28,6 +28,8 @@ class DefinitionViewController: UIViewController {
     private var initialTouchPoint: CGPoint = CGPoint(x: 0,y: 0)
     private var definitionCacheController: DefinitionCacheController!
     private var staredWordsController: StaredWordsController!
+    private var firebaseEvents: FirebaseEvents!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +47,7 @@ class DefinitionViewController: UIViewController {
 
         staredWordsController = StaredWordsController.getInstance()
         word.stared = staredWordsController.isWordStared(word.word)
+        firebaseEvents = FirebaseEvents()
 
         definitionCacheController = DefinitionCacheController.getInstance()
         definitionCacheController.getDefinitionForWord(word.word) { completion in
@@ -52,7 +55,9 @@ class DefinitionViewController: UIViewController {
             case .success(let word):
                 self.firebaseWord = word
                 self.refreshView()
+                self.firebaseEvents.logSuccessfulFirebaseFetch()
             case .wordDoesNotExists, .failure:
+                self.firebaseEvents.logFailedFirebaseFetch()
                 return
             }
             self.animationView.stopAnimation()
@@ -177,6 +182,7 @@ class DefinitionViewController: UIViewController {
     @objc private func moreDefinitionsButtonAction() {
         dismissView()
         delegate?.presentWebDefinitionsForWord(word.word)
+        firebaseEvents.logWebDefinitionsClick()
     }
 
     private func toggleFavoriteButton() {

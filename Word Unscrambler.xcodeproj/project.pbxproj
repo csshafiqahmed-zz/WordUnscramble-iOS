@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10507BAD1DB5B20100D91147 /* items.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10507BAC1DB5B20100D91147 /* items.txt */; };
-		106EADA320646E55008E41B0 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106EADA220646E55008E41B0 /* Combinations.swift */; };
-		106EADA5206478D4008E41B0 /* WordUnscramblerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106EADA4206478D4008E41B0 /* WordUnscramblerViewController.swift */; };
-		10CD01D42072894600152C68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 10CD01D32072894600152C68 /* GoogleService-Info.plist */; };
-		10DD00221D8A20070076D3BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00211D8A20070076D3BD /* AppDelegate.swift */; };
-		10DD00271D8A20070076D3BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DD00251D8A20070076D3BD /* Main.storyboard */; };
+		100806B42266BF25008EA9B6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100806B32266BF25008EA9B6 /* AdSupport.framework */; };
 		10DD002C1D8A20070076D3BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DD002B1D8A20070076D3BD /* Assets.xcassets */; };
-		10DD002F1D8A20070076D3BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DD002D1D8A20070076D3BD /* LaunchScreen.storyboard */; };
 		10DD003A1D8A20070076D3BD /* Word_UnscramblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00391D8A20070076D3BD /* Word_UnscramblerTests.swift */; };
 		10DD00451D8A20070076D3BD /* Word_UnscramblerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */; };
-		10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E18DC21DB1DF52004F6491 /* WebViewController.swift */; };
 		192E40555EC5A42F2851F233 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E43A0C2BE7713A00B8655 /* UIViewControllerExtension.swift */; };
+		192E40C3B282BCF4154EB9B8 /* FirebaseEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4A4ACF7C9F1ED499F31C /* FirebaseEvents.swift */; };
 		192E40D37324E59FEB08E6BA /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E44607A12D6194F01A5DD /* WordTableViewCell.swift */; };
 		192E40D40A0FAC6407450551 /* valid_words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192E43487310E4C647F5F76A /* valid_words.txt */; };
 		192E40E380D0F1F3F18C22B6 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4FE64D69B9BE3E41C1E7 /* Section.swift */; };
+		192E417EEC772193608E09D8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4DD706B4671FCB0D6D9D /* UIColorExtension.swift */; };
 		192E41ACAC0D76758BEC9B27 /* FirebaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E448C35D4D67C25AF3E94 /* FirebaseKey.swift */; };
 		192E41B9E8047C6E96938C55 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4ED948876667F9ED5BC9 /* FilterViewController.swift */; };
 		192E41F6F83527046E05AC32 /* FirebaseWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4AA9544482559D4E7A67 /* FirebaseWord.swift */; };
@@ -31,16 +26,20 @@
 		192E43D698E3C0790B138DCE /* WebDefinitionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E42E9051061B2CBF8C5FF /* WebDefinitionsViewController.swift */; };
 		192E44ABA4D6A42E7F2A3AF2 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */; };
 		192E44FBFB8ADB50C3C6C1B6 /* AlegreyaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */; };
+		192E44FF495A1CE24135BEF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 192E474FA5F78CACFD34BC63 /* GoogleService-Info.plist */; };
 		192E45659CFE347E05323E94 /* loading_seesaw.json in Resources */ = {isa = PBXBuildFile; fileRef = 192E42F7E1E291B4A2CC30EC /* loading_seesaw.json */; };
 		192E45CE8F803031F8F3C441 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4C2BD860E148C84DF0A0 /* UIViewExtension.swift */; };
 		192E45DD500340878E954655 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4DBB91D2EF43DE20F7A0 /* Icon.swift */; };
+		192E45DF8C7BA25C36B3B35A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192E4460BBE818701491DAE8 /* LaunchScreen.storyboard */; };
 		192E4675EE23C8E24F9BB9FE /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E44C9AACF1F6A94913DFA /* Default.swift */; };
 		192E469D237414FBDFC60A9A /* AlegreyaSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */; };
+		192E47236495A072650DA9FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192E4E45E77C09F3C9091854 /* Main.storyboard */; };
+		192E475D2EDD171E1950A5BD /* words_old.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192E4F4A9AF35E38DCE7D676 /* words_old.txt */; };
 		192E47931CC6335DBF78FD07 /* WebDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4E98CA51C5E627813FAA /* WebDefinitions.swift */; };
-		192E479832318BEDB32B9DDF /* StaredWordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E428E9661B2A5FF95BC2F /* StaredWordsController.swift */; };
 		192E47DA5B7EB3C8E71CA548 /* FavoriteWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45A737DF5C57DB5CEE51 /* FavoriteWordsViewController.swift */; };
 		192E47F555D76A6722749AA6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4D0D84EB18B88AA3D04A /* Color.swift */; };
 		192E4827FD40BFCE90A6FE08 /* DefinitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4418BB8F1D6593181D8B /* DefinitionTableViewCell.swift */; };
+		192E48A47DD4B39814A99235 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E40ED8E1826132167C989 /* Combinations.swift */; };
 		192E4A1AC6DE1026B9E71B16 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */; };
 		192E4A207C2E543D9A0A671E /* FirebaseFetchWordCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4CCCF373EC112CC1CD40 /* FirebaseFetchWordCompletion.swift */; };
 		192E4A942DD90BC453B0FFCA /* loading_cubes.json in Resources */ = {isa = PBXBuildFile; fileRef = 192E47CE3AEAC74C20606CFA /* loading_cubes.json */; };
@@ -50,7 +49,9 @@
 		192E4C3BF385039C64CD86E7 /* WebDefinitionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E473583715F4263539781 /* WebDefinitionCollectionViewCell.swift */; };
 		192E4C51D303AA67483EB7C4 /* AlegreyaSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E4C48C3E57A1CA00694C7 /* AlegreyaSans-ExtraBold.ttf */; };
 		192E4CA8E44A41AF32BA81CB /* LOTAnimationViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E448B88B8F44099EC0D77 /* LOTAnimationViewExtension.swift */; };
+		192E4CD2104D4CD07CC1AA84 /* FirebaseLogKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4860DEFB892293D8DFE8 /* FirebaseLogKeys.swift */; };
 		192E4D0808075595AF729419 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E47625FD846327F5913BA /* Font.swift */; };
+		192E4D2F5B2794F8A6C780A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F601EFFF5145723B146 /* AppDelegate.swift */; };
 		192E4D65362EC24B4DD090E6 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192E4EA911BCFBAADE70319B /* words.txt */; };
 		192E4D73DA17E6F0ADBB7B32 /* FetchDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45082A2439BDC45A40A1 /* FetchDefinition.swift */; };
 		192E4D9DE4CD715BEECBF404 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E486ED2019AE6BD720B86 /* Device.swift */; };
@@ -58,6 +59,7 @@
 		192E4DE53AD2FCC6EF0EBA7C /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45300D3668AAD0815BD4 /* DefinitionViewController.swift */; };
 		192E4E3ECAAB7426644E0831 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45551F2A85F8D4058B7A /* Circle.swift */; };
 		192E4E6D4B8C2B1610EF80DB /* UnScrambler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E487CC35795CFED381B36 /* UnScrambler.swift */; };
+		192E4F06F4AD271847FB1637 /* StaredWordsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E46780500D7E46C9BC4C9 /* StaredWordsController.swift */; };
 		192E4F6D704A3635A84BF927 /* AlegreyaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */; };
 		192E4F74D914EDCA975EF59B /* AlegreyaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E4E43292D7FF87C182227 /* AlegreyaSans-Regular.ttf */; };
 		192E4F7D81B59E4794769EA3 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4491A265B8CD8C0C8574 /* LottieAnimation.swift */; };
@@ -85,25 +87,17 @@
 
 /* Begin PBXFileReference section */
 		02CCE1A0D854DAC0F2540E68 /* Pods-Word UnscramblerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests.release.xcconfig"; sourceTree = "<group>"; };
-		10507BAC1DB5B20100D91147 /* items.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = items.txt; sourceTree = "<group>"; };
-		106EADA220646E55008E41B0 /* Combinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
-		106EADA4206478D4008E41B0 /* WordUnscramblerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordUnscramblerViewController.swift; sourceTree = "<group>"; };
-		10CD01D32072894600152C68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		100806B32266BF25008EA9B6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		10DD001E1D8A20070076D3BD /* Word Unscrambler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Unscrambler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10DD00211D8A20070076D3BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10DD00261D8A20070076D3BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10DD002B1D8A20070076D3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		10DD002E1D8A20070076D3BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		10DD00301D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10DD00351D8A20070076D3BD /* Word UnscramblerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word UnscramblerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DD00391D8A20070076D3BD /* Word_UnscramblerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_UnscramblerTests.swift; sourceTree = "<group>"; };
 		10DD003B1D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10DD00401D8A20070076D3BD /* Word UnscramblerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word UnscramblerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_UnscramblerUITests.swift; sourceTree = "<group>"; };
 		10DD00461D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10E18DC21DB1DF52004F6491 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		192E40ED8E1826132167C989 /* Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
 		192E41363D0C1D9F2C4E3263 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		192E428E9661B2A5FF95BC2F /* StaredWordsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaredWordsController.swift; sourceTree = "<group>"; };
 		192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Medium.ttf"; sourceTree = "<group>"; };
 		192E42E9051061B2CBF8C5FF /* WebDefinitionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDefinitionsViewController.swift; sourceTree = "<group>"; };
 		192E42F7E1E291B4A2CC30EC /* loading_seesaw.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_seesaw.json; sourceTree = "<group>"; };
@@ -111,6 +105,7 @@
 		192E43A0C2BE7713A00B8655 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		192E4418BB8F1D6593181D8B /* DefinitionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionTableViewCell.swift; sourceTree = "<group>"; };
 		192E44607A12D6194F01A5DD /* WordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		192E4460BBE818701491DAE8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		192E448B88B8F44099EC0D77 /* LOTAnimationViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOTAnimationViewExtension.swift; sourceTree = "<group>"; };
 		192E448C35D4D67C25AF3E94 /* FirebaseKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseKey.swift; sourceTree = "<group>"; };
 		192E4491A265B8CD8C0C8574 /* LottieAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
@@ -121,12 +116,16 @@
 		192E45551F2A85F8D4058B7A /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		192E45A737DF5C57DB5CEE51 /* FavoriteWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWordsViewController.swift; sourceTree = "<group>"; };
 		192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Bold.ttf"; sourceTree = "<group>"; };
+		192E46780500D7E46C9BC4C9 /* StaredWordsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaredWordsController.swift; sourceTree = "<group>"; };
 		192E473583715F4263539781 /* WebDefinitionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDefinitionCollectionViewCell.swift; sourceTree = "<group>"; };
+		192E474FA5F78CACFD34BC63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		192E47625FD846327F5913BA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		192E47CE3AEAC74C20606CFA /* loading_cubes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_cubes.json; sourceTree = "<group>"; };
+		192E4860DEFB892293D8DFE8 /* FirebaseLogKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseLogKeys.swift; sourceTree = "<group>"; };
 		192E486ED2019AE6BD720B86 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		192E487CC35795CFED381B36 /* UnScrambler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnScrambler.swift; sourceTree = "<group>"; };
 		192E49056F848F67B81FF008 /* FirebaseReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		192E4A4ACF7C9F1ED499F31C /* FirebaseEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseEvents.swift; sourceTree = "<group>"; };
 		192E4AA9544482559D4E7A67 /* FirebaseWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseWord.swift; sourceTree = "<group>"; };
 		192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIrebaseFetch.swift; sourceTree = "<group>"; };
 		192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
@@ -137,12 +136,17 @@
 		192E4D0D84EB18B88AA3D04A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		192E4D835E278916A818DBF4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		192E4DBB91D2EF43DE20F7A0 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		192E4DD706B4671FCB0D6D9D /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		192E4E43292D7FF87C182227 /* AlegreyaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Regular.ttf"; sourceTree = "<group>"; };
+		192E4E45E77C09F3C9091854 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		192E4E4F5354714F9703F8AE /* invalid_words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = invalid_words.txt; sourceTree = "<group>"; };
 		192E4E98CA51C5E627813FAA /* WebDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDefinitions.swift; sourceTree = "<group>"; };
 		192E4EA911BCFBAADE70319B /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		192E4ED948876667F9ED5BC9 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		192E4F3952684D043C9A0583 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		192E4F4A9AF35E38DCE7D676 /* words_old.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_old.txt; sourceTree = "<group>"; };
+		192E4F601EFFF5145723B146 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
 		192E4FE64D69B9BE3E41C1E7 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		3A7C33669F97B24621C5A6C6 /* Pods-Word UnscramblerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100806B42266BF25008EA9B6 /* AdSupport.framework in Frameworks */,
 				BCDFCD701FCD4AE6E1E1070A /* Pods_Word_Unscrambler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,16 +213,7 @@
 		10DD00201D8A20070076D3BD /* Word Unscrambler */ = {
 			isa = PBXGroup;
 			children = (
-				10507BAC1DB5B20100D91147 /* items.txt */,
-				10DD00211D8A20070076D3BD /* AppDelegate.swift */,
-				106EADA4206478D4008E41B0 /* WordUnscramblerViewController.swift */,
-				10E18DC21DB1DF52004F6491 /* WebViewController.swift */,
-				10DD00251D8A20070076D3BD /* Main.storyboard */,
 				10DD002B1D8A20070076D3BD /* Assets.xcassets */,
-				10DD002D1D8A20070076D3BD /* LaunchScreen.storyboard */,
-				10DD00301D8A20070076D3BD /* Info.plist */,
-				10CD01D32072894600152C68 /* GoogleService-Info.plist */,
-				106EADA220646E55008E41B0 /* Combinations.swift */,
 				192E49B0E12E1323F4F3AC3E /* ViewControllers */,
 				192E46A50DEE2C300500D9CD /* Extensions */,
 				192E48FE3CE381D5FA6208C7 /* Util */,
@@ -229,6 +225,9 @@
 				192E41851FBA0A5FF42136A4 /* CompletionHandlers */,
 				192E47E0BE861379A60042E7 /* Views */,
 				192E434A22DB6A66FFF4AC52 /* LottieAnimations */,
+				192E4557300FC19C8844906C /* Other */,
+				192E4F3952684D043C9A0583 /* Info.plist */,
+				192E474FA5F78CACFD34BC63 /* GoogleService-Info.plist */,
 			);
 			path = "Word Unscrambler";
 			sourceTree = "<group>";
@@ -265,6 +264,7 @@
 				192E43487310E4C647F5F76A /* valid_words.txt */,
 				192E4E4F5354714F9703F8AE /* invalid_words.txt */,
 				192E4EA911BCFBAADE70319B /* words.txt */,
+				192E4F4A9AF35E38DCE7D676 /* words_old.txt */,
 			);
 			path = WordFiles;
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 				192E49056F848F67B81FF008 /* FirebaseReference.swift */,
 				192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */,
 				192E4C42C3927914F68D7A56 /* DefinitionCacheController.swift */,
-				192E428E9661B2A5FF95BC2F /* StaredWordsController.swift */,
+				192E4A4ACF7C9F1ED499F31C /* FirebaseEvents.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -290,6 +290,16 @@
 			path = LottieAnimations;
 			sourceTree = "<group>";
 		};
+		192E4557300FC19C8844906C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				192E4E45E77C09F3C9091854 /* Main.storyboard */,
+				192E4F601EFFF5145723B146 /* AppDelegate.swift */,
+				192E4460BBE818701491DAE8 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		192E46A50DEE2C300500D9CD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +308,7 @@
 				192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */,
 				192E4C2BD860E148C84DF0A0 /* UIViewExtension.swift */,
 				192E448B88B8F44099EC0D77 /* LOTAnimationViewExtension.swift */,
+				192E4DD706B4671FCB0D6D9D /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,6 +342,8 @@
 				192E44C9AACF1F6A94913DFA /* Default.swift */,
 				192E4491A265B8CD8C0C8574 /* LottieAnimation.swift */,
 				192E486ED2019AE6BD720B86 /* Device.swift */,
+				192E40ED8E1826132167C989 /* Combinations.swift */,
+				192E4860DEFB892293D8DFE8 /* FirebaseLogKeys.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -367,6 +380,7 @@
 				192E45082A2439BDC45A40A1 /* FetchDefinition.swift */,
 				192E4AA9544482559D4E7A67 /* FirebaseWord.swift */,
 				192E4E98CA51C5E627813FAA /* WebDefinitions.swift */,
+				192E46780500D7E46C9BC4C9 /* StaredWordsController.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -374,6 +388,7 @@
 		3C3CD7F1861EA447717828C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				100806B32266BF25008EA9B6 /* AdSupport.framework */,
 				ACE16E75A5D661CB5317EB54 /* Pods_Word_Unscrambler.framework */,
 				E72DD8FC65ADB0ACC9EA275B /* Pods_Word_UnscramblerTests.framework */,
 				B61AF3B9DCD4A51E22383A12 /* Pods_Word_UnscramblerUITests.framework */,
@@ -510,11 +525,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10DD002F1D8A20070076D3BD /* LaunchScreen.storyboard in Resources */,
-				10507BAD1DB5B20100D91147 /* items.txt in Resources */,
-				10CD01D42072894600152C68 /* GoogleService-Info.plist in Resources */,
 				10DD002C1D8A20070076D3BD /* Assets.xcassets in Resources */,
-				10DD00271D8A20070076D3BD /* Main.storyboard in Resources */,
 				192E469D237414FBDFC60A9A /* AlegreyaSans-Black.ttf in Resources */,
 				192E4C51D303AA67483EB7C4 /* AlegreyaSans-ExtraBold.ttf in Resources */,
 				192E4F74D914EDCA975EF59B /* AlegreyaSans-Regular.ttf in Resources */,
@@ -525,6 +536,10 @@
 				192E4D65362EC24B4DD090E6 /* words.txt in Resources */,
 				192E4A942DD90BC453B0FFCA /* loading_cubes.json in Resources */,
 				192E45659CFE347E05323E94 /* loading_seesaw.json in Resources */,
+				192E475D2EDD171E1950A5BD /* words_old.txt in Resources */,
+				192E47236495A072650DA9FE /* Main.storyboard in Resources */,
+				192E44FF495A1CE24135BEF1 /* GoogleService-Info.plist in Resources */,
+				192E45DF8C7BA25C36B3B35A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,10 +675,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10DD00221D8A20070076D3BD /* AppDelegate.swift in Sources */,
-				10E18DC31DB1DF52004F6491 /* WebViewController.swift in Sources */,
-				106EADA320646E55008E41B0 /* Combinations.swift in Sources */,
-				106EADA5206478D4008E41B0 /* WordUnscramblerViewController.swift in Sources */,
 				192E4B18925542C97CEB5DD8 /* MainViewController.swift in Sources */,
 				192E40555EC5A42F2851F233 /* UIViewControllerExtension.swift in Sources */,
 				192E47F555D76A6722749AA6 /* Color.swift in Sources */,
@@ -692,11 +703,16 @@
 				192E4F7D81B59E4794769EA3 /* LottieAnimation.swift in Sources */,
 				192E42925ACDE98E526F934B /* DefinitionCacheController.swift in Sources */,
 				192E4D9DE4CD715BEECBF404 /* Device.swift in Sources */,
-				192E479832318BEDB32B9DDF /* StaredWordsController.swift in Sources */,
 				192E47DA5B7EB3C8E71CA548 /* FavoriteWordsViewController.swift in Sources */,
 				192E43D698E3C0790B138DCE /* WebDefinitionsViewController.swift in Sources */,
 				192E4C3BF385039C64CD86E7 /* WebDefinitionCollectionViewCell.swift in Sources */,
 				192E47931CC6335DBF78FD07 /* WebDefinitions.swift in Sources */,
+				192E48A47DD4B39814A99235 /* Combinations.swift in Sources */,
+				192E4D2F5B2794F8A6C780A0 /* AppDelegate.swift in Sources */,
+				192E40C3B282BCF4154EB9B8 /* FirebaseEvents.swift in Sources */,
+				192E4CD2104D4CD07CC1AA84 /* FirebaseLogKeys.swift in Sources */,
+				192E417EEC772193608E09D8 /* UIColorExtension.swift in Sources */,
+				192E4F06F4AD271847FB1637 /* StaredWordsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,25 +746,6 @@
 			targetProxy = 10DD00411D8A20070076D3BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		10DD00251D8A20070076D3BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10DD00261D8A20070076D3BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		10DD002D1D8A20070076D3BD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				10DD002E1D8A20070076D3BD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		10DD00471D8A20070076D3BD /* Debug */ = {

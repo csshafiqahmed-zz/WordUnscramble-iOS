@@ -15,13 +15,11 @@ public class FirebaseFetch {
             if let error = error {
                 print(error)
                 completion(.wordDoesNotExists)
-                // TODO Log
                 return
             }
 
             if let document = wordSnapshot, document.exists {
                 completion(.success(FirebaseWord(document: document)))
-                // TODO log
             } else {
                 completion(.failure)
             }

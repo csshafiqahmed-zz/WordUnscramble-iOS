@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Initialize the Google Mobile Ads SDK
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-6364543110450580~8410025334")
+        GADMobileAds.configure(withApplicationID: Default.ADMOB_APP_ID)
         // Initialize the Firebase
         FirebaseApp.configure()
         
