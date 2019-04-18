@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		100806B42266BF25008EA9B6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100806B32266BF25008EA9B6 /* AdSupport.framework */; };
+		10D4F9362268C9010062C86A /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D4F9352268C9010062C86A /* a.png */; };
 		10DD002C1D8A20070076D3BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DD002B1D8A20070076D3BD /* Assets.xcassets */; };
 		10DD003A1D8A20070076D3BD /* Word_UnscramblerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00391D8A20070076D3BD /* Word_UnscramblerTests.swift */; };
 		10DD00451D8A20070076D3BD /* Word_UnscramblerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */; };
@@ -48,6 +49,7 @@
 		192E4A1AC6DE1026B9E71B16 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */; };
 		192E4A207C2E543D9A0A671E /* FirebaseFetchWordCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4CCCF373EC112CC1CD40 /* FirebaseFetchWordCompletion.swift */; };
 		192E4A942DD90BC453B0FFCA /* loading_cubes.json in Resources */ = {isa = PBXBuildFile; fileRef = 192E47CE3AEAC74C20606CFA /* loading_cubes.json */; };
+		192E4AAD2D474FE19767454F /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4A18AD6B2BD6177556C9 /* Image.swift */; };
 		192E4B18925542C97CEB5DD8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4D835E278916A818DBF4 /* MainViewController.swift */; };
 		192E4B41BB561A6250BEEF2A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E41363D0C1D9F2C4E3263 /* Message.swift */; };
 		192E4C11EDAAACB78A304CDE /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4BA05B2AA869C2664D5C /* UITextFieldExtension.swift */; };
@@ -93,6 +95,7 @@
 /* Begin PBXFileReference section */
 		02CCE1A0D854DAC0F2540E68 /* Pods-Word UnscramblerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerTests/Pods-Word UnscramblerTests.release.xcconfig"; sourceTree = "<group>"; };
 		100806B32266BF25008EA9B6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		10D4F9352268C9010062C86A /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 		10DD001E1D8A20070076D3BD /* Word Unscrambler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Word Unscrambler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DD002B1D8A20070076D3BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10DD00351D8A20070076D3BD /* Word UnscramblerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word UnscramblerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +138,7 @@
 		192E487CC35795CFED381B36 /* UnScrambler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnScrambler.swift; sourceTree = "<group>"; };
 		192E49056F848F67B81FF008 /* FirebaseReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
 		192E49C496468FF8F88E72E6 /* FirebasePush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebasePush.swift; sourceTree = "<group>"; };
+		192E4A18AD6B2BD6177556C9 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		192E4A4ACF7C9F1ED499F31C /* FirebaseEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseEvents.swift; sourceTree = "<group>"; };
 		192E4AA9544482559D4E7A67 /* FirebaseWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseWord.swift; sourceTree = "<group>"; };
 		192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIrebaseFetch.swift; sourceTree = "<group>"; };
@@ -304,6 +308,7 @@
 		192E4557300FC19C8844906C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				10D4F9352268C9010062C86A /* a.png */,
 				192E4E45E77C09F3C9091854 /* Main.storyboard */,
 				192E4F601EFFF5145723B146 /* AppDelegate.swift */,
 				192E4460BBE818701491DAE8 /* LaunchScreen.storyboard */,
@@ -357,6 +362,7 @@
 				192E486ED2019AE6BD720B86 /* Device.swift */,
 				192E40ED8E1826132167C989 /* Combinations.swift */,
 				192E4860DEFB892293D8DFE8 /* FirebaseLogKeys.swift */,
+				192E4A18AD6B2BD6177556C9 /* Image.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -549,6 +555,7 @@
 				192E40D40A0FAC6407450551 /* valid_words.txt in Resources */,
 				192E433E5A940D32BA26D171 /* invalid_words.txt in Resources */,
 				192E4D65362EC24B4DD090E6 /* words.txt in Resources */,
+				10D4F9362268C9010062C86A /* a.png in Resources */,
 				192E4A942DD90BC453B0FFCA /* loading_cubes.json in Resources */,
 				192E45659CFE347E05323E94 /* loading_seesaw.json in Resources */,
 				192E475D2EDD171E1950A5BD /* words_old.txt in Resources */,
@@ -733,6 +740,7 @@
 				192E45E9E48D8C0A60DF1432 /* SnappingCollectionViewLayout.swift in Sources */,
 				192E4FC3C0E142D498A1F063 /* FeedbackViewController.swift in Sources */,
 				192E4883CED037C7EE2A75C6 /* FirebasePush.swift in Sources */,
+				192E4AAD2D474FE19767454F /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

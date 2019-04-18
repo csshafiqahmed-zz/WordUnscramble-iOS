@@ -78,11 +78,15 @@ extension InfoViewController {
 
     override func setupView() {
         appIconImageView = UIImageView()
+        appIconImageView.image = Image.UNSCRAMBLER_256
+        appIconImageView.contentMode = .scaleAspectFit
+        appIconImageView.clipsToBounds = true
+        appIconImageView.addShadow(cornerRadius: 36)
         view.addSubview(appIconImageView)
 
         titleLabel = UILabel()
         titleLabel.text = Message.UNSCRAMBLE
-        titleLabel.font = Font.AlegreyaSans.bold(with: 36)
+        titleLabel.font = Font.AlegreyaSans.bold(with: 40)
         titleLabel.textColor = .app
         titleLabel.textAlignment = .center
         view.addSubview(titleLabel)
@@ -128,12 +132,12 @@ extension InfoViewController {
         appIconImageView.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.top.equalToSuperview().offset(36)
-            maker.size.equalTo(64)
+            maker.size.equalTo(128)
         }
 
         titleLabel.snp.makeConstraints { maker in
             maker.left.right.equalToSuperview()
-            maker.top.equalTo(appIconImageView.snp.bottom).offset(24)
+            maker.top.equalTo(appIconImageView.snp.bottom).offset(16)
             maker.height.equalTo(titleLabel.intrinsicContentSize.height)
         }
 
