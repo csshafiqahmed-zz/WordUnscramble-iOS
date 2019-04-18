@@ -20,11 +20,12 @@ public class FirebaseEvents {
         Analytics.logEvent(LogKey.AD_FAILED_TO_LOAD, parameters: nil)
     }
     
-    // Search
+    // Unscramble
     public func logUnscramble() {
         Analytics.logEvent(LogKey.UNSCRAMBLE, parameters: nil)
     }
 
+    // Words
     public func logAddedWordToFavorite() {
         Analytics.logEvent(LogKey.STARED, parameters: nil)
     }

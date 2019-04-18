@@ -3,13 +3,15 @@ import SnapKit
 
 class DefinitionTableViewCell: UITableViewCell {
 
-    private var bulletView: Circle!
-    public var definitionLabel: UILabel!
+    // MARK: UIElements
+    private let bulletView = Circle()
+    let definitionLabel = UILabel()
 
     override init(style: CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         backgroundColor = .white
+
         setupView()
     }
 
@@ -38,10 +40,8 @@ class DefinitionTableViewCell: UITableViewCell {
     }
 
     override func setupView() {
-        bulletView = Circle()
         contentView.addSubview(bulletView)
 
-        definitionLabel = UILabel()
         definitionLabel.textColor = .app
         definitionLabel.textAlignment = .left
         definitionLabel.font = Font.AlegreyaSans.medium(with: 20)

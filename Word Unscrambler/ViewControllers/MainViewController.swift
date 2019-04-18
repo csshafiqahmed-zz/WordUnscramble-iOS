@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
     private var firebaseEvents: FirebaseEvents!
     private var unscrambler: UnScrambler!
     private var staredWordsController: StaredWordsController!
-    private var data: [Section] = [Section]()
+    private var data: [TableViewSection] = [TableViewSection]()
     private let rowHeight: CGFloat = 40.0
     private let headerHeight: CGFloat = 44.0
 
@@ -75,6 +75,10 @@ class MainViewController: UIViewController {
      */
     @objc private func favoriteButtonAction() {
         navigationController?.pushViewController(FavoriteWordsViewController(), animated: true)
+    }
+
+    @objc private func infoButtonAction() {
+        navigationController?.pushViewController(InfoViewController(), animated: true)
     }
 
     /**
@@ -332,11 +336,11 @@ extension MainViewController {
         titleLabel.textAlignment = .center
         navigationItem.titleView = titleLabel
 
-        // Settings
-//        let settingButton = UIButton(type: .custom)
-//        settingButton.setImage(Icon.setting_24, for: .normal)
-//        settingButton.imageView?.tintColor = .white
-//        settingButton.addTarget(self, action: #selector(settingButtonAction), for: .touchUpInside)
+        // Info Button
+        let infoButton = UIButton(type: .custom)
+        infoButton.setImage(Icon.info_24, for: .normal)
+        infoButton.imageView?.tintColor = .white
+        infoButton.addTarget(self, action: #selector(infoButtonAction), for: .touchUpInside)
 
         // Donate
         let favoriteButton = UIButton(type: .custom)
@@ -348,7 +352,7 @@ extension MainViewController {
         space.width = 16
 
         // Right bar buttons
-        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: favoriteButton)]
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: infoButton), space, UIBarButtonItem(customView: favoriteButton)]
     }
 
     override func addConstraints() {
@@ -490,6 +494,7 @@ extension MainViewController {
         noResultsLabel.textAlignment = .center
         noResultsLabel.font = Font.AlegreyaSans.bold(with: 24)
         noResultsLabel.numberOfLines = 2
+        noResultsLabel.isHidden = true
         view.addSubview(noResultsLabel)
 
         infoLabel = UILabel()

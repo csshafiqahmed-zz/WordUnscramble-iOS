@@ -29,6 +29,7 @@ class DefinitionViewController: UIViewController {
     private var definitionCacheController: DefinitionCacheController!
     private var staredWordsController: StaredWordsController!
     private var firebaseEvents: FirebaseEvents!
+    internal var onDoneBlock: (() -> Void)?
 
 
     override func viewDidLoad() {
@@ -146,6 +147,9 @@ class DefinitionViewController: UIViewController {
 
     @objc private func dismissView() {
         self.dismiss(animated: true)
+        if onDoneBlock != nil {
+            self.onDoneBlock!()
+        }
     }
 
     @objc private func panGestureRecognizerHandler(_ sender: UIPanGestureRecognizer) {

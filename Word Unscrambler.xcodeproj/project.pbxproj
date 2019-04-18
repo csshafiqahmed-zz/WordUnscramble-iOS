@@ -15,8 +15,9 @@
 		192E40C3B282BCF4154EB9B8 /* FirebaseEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4A4ACF7C9F1ED499F31C /* FirebaseEvents.swift */; };
 		192E40D37324E59FEB08E6BA /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E44607A12D6194F01A5DD /* WordTableViewCell.swift */; };
 		192E40D40A0FAC6407450551 /* valid_words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192E43487310E4C647F5F76A /* valid_words.txt */; };
-		192E40E380D0F1F3F18C22B6 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4FE64D69B9BE3E41C1E7 /* Section.swift */; };
+		192E40E380D0F1F3F18C22B6 /* TableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4FE64D69B9BE3E41C1E7 /* TableViewSection.swift */; };
 		192E417EEC772193608E09D8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4DD706B4671FCB0D6D9D /* UIColorExtension.swift */; };
+		192E41AC32A45539FF98822C /* BannerAdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E477A38E84AC371916003 /* BannerAdCollectionViewCell.swift */; };
 		192E41ACAC0D76758BEC9B27 /* FirebaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E448C35D4D67C25AF3E94 /* FirebaseKey.swift */; };
 		192E41B9E8047C6E96938C55 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4ED948876667F9ED5BC9 /* FilterViewController.swift */; };
 		192E41F6F83527046E05AC32 /* FirebaseWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4AA9544482559D4E7A67 /* FirebaseWord.swift */; };
@@ -31,15 +32,19 @@
 		192E45CE8F803031F8F3C441 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4C2BD860E148C84DF0A0 /* UIViewExtension.swift */; };
 		192E45DD500340878E954655 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4DBB91D2EF43DE20F7A0 /* Icon.swift */; };
 		192E45DF8C7BA25C36B3B35A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192E4460BBE818701491DAE8 /* LaunchScreen.storyboard */; };
+		192E45E9E48D8C0A60DF1432 /* SnappingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E46F4F494B9F3046718FF /* SnappingCollectionViewLayout.swift */; };
 		192E4675EE23C8E24F9BB9FE /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E44C9AACF1F6A94913DFA /* Default.swift */; };
 		192E469D237414FBDFC60A9A /* AlegreyaSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */; };
+		192E46FCFC3DB35DF1FF65E6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4118DC8C4A2EF3073A4A /* InfoViewController.swift */; };
 		192E47236495A072650DA9FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192E4E45E77C09F3C9091854 /* Main.storyboard */; };
 		192E475D2EDD171E1950A5BD /* words_old.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192E4F4A9AF35E38DCE7D676 /* words_old.txt */; };
 		192E47931CC6335DBF78FD07 /* WebDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4E98CA51C5E627813FAA /* WebDefinitions.swift */; };
 		192E47DA5B7EB3C8E71CA548 /* FavoriteWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45A737DF5C57DB5CEE51 /* FavoriteWordsViewController.swift */; };
 		192E47F555D76A6722749AA6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4D0D84EB18B88AA3D04A /* Color.swift */; };
 		192E4827FD40BFCE90A6FE08 /* DefinitionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4418BB8F1D6593181D8B /* DefinitionTableViewCell.swift */; };
+		192E4883CED037C7EE2A75C6 /* FirebasePush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E49C496468FF8F88E72E6 /* FirebasePush.swift */; };
 		192E48A47DD4B39814A99235 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E40ED8E1826132167C989 /* Combinations.swift */; };
+		192E49C0C2C74C418169EB9A /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4518DFDBB156064C1251 /* Word.swift */; };
 		192E4A1AC6DE1026B9E71B16 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */; };
 		192E4A207C2E543D9A0A671E /* FirebaseFetchWordCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4CCCF373EC112CC1CD40 /* FirebaseFetchWordCompletion.swift */; };
 		192E4A942DD90BC453B0FFCA /* loading_cubes.json in Resources */ = {isa = PBXBuildFile; fileRef = 192E47CE3AEAC74C20606CFA /* loading_cubes.json */; };
@@ -53,7 +58,6 @@
 		192E4D0808075595AF729419 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E47625FD846327F5913BA /* Font.swift */; };
 		192E4D2F5B2794F8A6C780A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4F601EFFF5145723B146 /* AppDelegate.swift */; };
 		192E4D65362EC24B4DD090E6 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 192E4EA911BCFBAADE70319B /* words.txt */; };
-		192E4D73DA17E6F0ADBB7B32 /* FetchDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45082A2439BDC45A40A1 /* FetchDefinition.swift */; };
 		192E4D9DE4CD715BEECBF404 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E486ED2019AE6BD720B86 /* Device.swift */; };
 		192E4DC96685179B9338301A /* FIrebaseFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */; };
 		192E4DE53AD2FCC6EF0EBA7C /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E45300D3668AAD0815BD4 /* DefinitionViewController.swift */; };
@@ -63,6 +67,7 @@
 		192E4F6D704A3635A84BF927 /* AlegreyaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */; };
 		192E4F74D914EDCA975EF59B /* AlegreyaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 192E4E43292D7FF87C182227 /* AlegreyaSans-Regular.ttf */; };
 		192E4F7D81B59E4794769EA3 /* LottieAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E4491A265B8CD8C0C8574 /* LottieAnimation.swift */; };
+		192E4FC3C0E142D498A1F063 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192E40AC1897178D472C81C2 /* FeedbackViewController.swift */; };
 		8597D5461A571913E4A69608 /* Pods_Word_UnscramblerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61AF3B9DCD4A51E22383A12 /* Pods_Word_UnscramblerUITests.framework */; };
 		A3F1C15A89C83607F9C00DF8 /* Pods_Word_UnscramblerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72DD8FC65ADB0ACC9EA275B /* Pods_Word_UnscramblerTests.framework */; };
 		BCDFCD701FCD4AE6E1E1070A /* Pods_Word_Unscrambler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE16E75A5D661CB5317EB54 /* Pods_Word_Unscrambler.framework */; };
@@ -96,7 +101,9 @@
 		10DD00401D8A20070076D3BD /* Word UnscramblerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Word UnscramblerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10DD00441D8A20070076D3BD /* Word_UnscramblerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word_UnscramblerUITests.swift; sourceTree = "<group>"; };
 		10DD00461D8A20070076D3BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192E40AC1897178D472C81C2 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		192E40ED8E1826132167C989 /* Combinations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
+		192E4118DC8C4A2EF3073A4A /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		192E41363D0C1D9F2C4E3263 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		192E42B1873990B03909B2D6 /* AlegreyaSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Medium.ttf"; sourceTree = "<group>"; };
 		192E42E9051061B2CBF8C5FF /* WebDefinitionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDefinitionsViewController.swift; sourceTree = "<group>"; };
@@ -111,20 +118,23 @@
 		192E4491A265B8CD8C0C8574 /* LottieAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieAnimation.swift; sourceTree = "<group>"; };
 		192E44AF7DF1E66457439C69 /* AlegreyaSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Black.ttf"; sourceTree = "<group>"; };
 		192E44C9AACF1F6A94913DFA /* Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
-		192E45082A2439BDC45A40A1 /* FetchDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchDefinition.swift; sourceTree = "<group>"; };
+		192E4518DFDBB156064C1251 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		192E45300D3668AAD0815BD4 /* DefinitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
 		192E45551F2A85F8D4058B7A /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		192E45A737DF5C57DB5CEE51 /* FavoriteWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteWordsViewController.swift; sourceTree = "<group>"; };
 		192E4618C011AD7DB651C51D /* AlegreyaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file.ttf; path = "AlegreyaSans-Bold.ttf"; sourceTree = "<group>"; };
 		192E46780500D7E46C9BC4C9 /* StaredWordsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaredWordsController.swift; sourceTree = "<group>"; };
+		192E46F4F494B9F3046718FF /* SnappingCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnappingCollectionViewLayout.swift; sourceTree = "<group>"; };
 		192E473583715F4263539781 /* WebDefinitionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebDefinitionCollectionViewCell.swift; sourceTree = "<group>"; };
 		192E474FA5F78CACFD34BC63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		192E47625FD846327F5913BA /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		192E477A38E84AC371916003 /* BannerAdCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerAdCollectionViewCell.swift; sourceTree = "<group>"; };
 		192E47CE3AEAC74C20606CFA /* loading_cubes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_cubes.json; sourceTree = "<group>"; };
 		192E4860DEFB892293D8DFE8 /* FirebaseLogKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseLogKeys.swift; sourceTree = "<group>"; };
 		192E486ED2019AE6BD720B86 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		192E487CC35795CFED381B36 /* UnScrambler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnScrambler.swift; sourceTree = "<group>"; };
 		192E49056F848F67B81FF008 /* FirebaseReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseReference.swift; sourceTree = "<group>"; };
+		192E49C496468FF8F88E72E6 /* FirebasePush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebasePush.swift; sourceTree = "<group>"; };
 		192E4A4ACF7C9F1ED499F31C /* FirebaseEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseEvents.swift; sourceTree = "<group>"; };
 		192E4AA9544482559D4E7A67 /* FirebaseWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseWord.swift; sourceTree = "<group>"; };
 		192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIrebaseFetch.swift; sourceTree = "<group>"; };
@@ -148,7 +158,7 @@
 		192E4F4A9AF35E38DCE7D676 /* words_old.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words_old.txt; sourceTree = "<group>"; };
 		192E4F601EFFF5145723B146 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		192E4F99605231FE49EFE00F /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
-		192E4FE64D69B9BE3E41C1E7 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		192E4FE64D69B9BE3E41C1E7 /* TableViewSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewSection.swift; sourceTree = "<group>"; };
 		3A7C33669F97B24621C5A6C6 /* Pods-Word UnscramblerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word UnscramblerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word UnscramblerUITests/Pods-Word UnscramblerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6DB28EE393E853AA144B2A6A /* Pods-Word Unscrambler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Unscrambler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.debug.xcconfig"; sourceTree = "<group>"; };
 		7AAEC2551AF72120C378539A /* Pods-Word Unscrambler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Word Unscrambler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Word Unscrambler/Pods-Word Unscrambler.release.xcconfig"; sourceTree = "<group>"; };
@@ -277,6 +287,7 @@
 				192E4B6D53337C4E02C79C23 /* FIrebaseFetch.swift */,
 				192E4C42C3927914F68D7A56 /* DefinitionCacheController.swift */,
 				192E4A4ACF7C9F1ED499F31C /* FirebaseEvents.swift */,
+				192E49C496468FF8F88E72E6 /* FirebasePush.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -317,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				192E45551F2A85F8D4058B7A /* Circle.swift */,
+				192E46F4F494B9F3046718FF /* SnappingCollectionViewLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +340,7 @@
 				192E4F052DB16E8CB15E1662 /* CollapsibleTableViewHeader.swift */,
 				192E4418BB8F1D6593181D8B /* DefinitionTableViewCell.swift */,
 				192E473583715F4263539781 /* WebDefinitionCollectionViewCell.swift */,
+				192E477A38E84AC371916003 /* BannerAdCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -356,6 +369,8 @@
 				192E45300D3668AAD0815BD4 /* DefinitionViewController.swift */,
 				192E45A737DF5C57DB5CEE51 /* FavoriteWordsViewController.swift */,
 				192E42E9051061B2CBF8C5FF /* WebDefinitionsViewController.swift */,
+				192E4118DC8C4A2EF3073A4A /* InfoViewController.swift */,
+				192E40AC1897178D472C81C2 /* FeedbackViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -375,12 +390,12 @@
 		192E4B9FEAB91025BBC8E0AD /* Type */ = {
 			isa = PBXGroup;
 			children = (
-				192E4FE64D69B9BE3E41C1E7 /* Section.swift */,
+				192E4FE64D69B9BE3E41C1E7 /* TableViewSection.swift */,
 				192E487CC35795CFED381B36 /* UnScrambler.swift */,
-				192E45082A2439BDC45A40A1 /* FetchDefinition.swift */,
 				192E4AA9544482559D4E7A67 /* FirebaseWord.swift */,
 				192E4E98CA51C5E627813FAA /* WebDefinitions.swift */,
 				192E46780500D7E46C9BC4C9 /* StaredWordsController.swift */,
+				192E4518DFDBB156064C1251 /* Word.swift */,
 			);
 			path = Type;
 			sourceTree = "<group>";
@@ -483,7 +498,7 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = TEGLEE3UYA;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					10DD00341D8A20070076D3BD = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -686,12 +701,11 @@
 				192E40D37324E59FEB08E6BA /* WordTableViewCell.swift in Sources */,
 				192E45CE8F803031F8F3C441 /* UIViewExtension.swift in Sources */,
 				192E4A1AC6DE1026B9E71B16 /* CollapsibleTableViewHeader.swift in Sources */,
-				192E40E380D0F1F3F18C22B6 /* Section.swift in Sources */,
+				192E40E380D0F1F3F18C22B6 /* TableViewSection.swift in Sources */,
 				192E4E6D4B8C2B1610EF80DB /* UnScrambler.swift in Sources */,
 				192E4675EE23C8E24F9BB9FE /* Default.swift in Sources */,
 				192E41B9E8047C6E96938C55 /* FilterViewController.swift in Sources */,
 				192E4DE53AD2FCC6EF0EBA7C /* DefinitionViewController.swift in Sources */,
-				192E4D73DA17E6F0ADBB7B32 /* FetchDefinition.swift in Sources */,
 				192E41ACAC0D76758BEC9B27 /* FirebaseKey.swift in Sources */,
 				192E439C090F5E0965775601 /* FirebaseReference.swift in Sources */,
 				192E4DC96685179B9338301A /* FIrebaseFetch.swift in Sources */,
@@ -713,6 +727,12 @@
 				192E4CD2104D4CD07CC1AA84 /* FirebaseLogKeys.swift in Sources */,
 				192E417EEC772193608E09D8 /* UIColorExtension.swift in Sources */,
 				192E4F06F4AD271847FB1637 /* StaredWordsController.swift in Sources */,
+				192E49C0C2C74C418169EB9A /* Word.swift in Sources */,
+				192E46FCFC3DB35DF1FF65E6 /* InfoViewController.swift in Sources */,
+				192E41AC32A45539FF98822C /* BannerAdCollectionViewCell.swift in Sources */,
+				192E45E9E48D8C0A60DF1432 /* SnappingCollectionViewLayout.swift in Sources */,
+				192E4FC3C0E142D498A1F063 /* FeedbackViewController.swift in Sources */,
+				192E4883CED037C7EE2A75C6 /* FirebasePush.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,15 +888,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				INFOPLIST_FILE = "Word Unscrambler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.satishboggarapu.Word-Unscrambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "028eedbe-c618-4fb8-ab2e-06d6fca3d84f";
-				PROVISIONING_PROFILE_SPECIFIER = WordUnscramblerDevelopment;
+				PROVISIONING_PROFILE = Automatic;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};
@@ -887,17 +907,17 @@
 			baseConfigurationReference = 7AAEC2551AF72120C378539A /* Pods-Word Unscrambler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TEGLEE3UYA;
 				INFOPLIST_FILE = "Word Unscrambler/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.satishboggarapu.Word-Unscrambler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5ef05b47-affc-41d3-936a-957327a04a39";
-				PROVISIONING_PROFILE_SPECIFIER = WordUnscramblerDistribution;
+				PROVISIONING_PROFILE = Automatic;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 			};

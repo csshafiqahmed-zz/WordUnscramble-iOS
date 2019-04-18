@@ -6,11 +6,12 @@ class WebDefinitionsViewController: UIViewController {
 
     // MARK: UIElements
     private var collectionView: UICollectionView!
-    private var adBannerView: GADBannerView!
+//    private var adBannerView: GADBannerView!
 
     // MARK: Attributes
     public var word: String = "Word"
     private var firebaseEvents: FirebaseEvents!
+    private var elements = [WebDefinitions?]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +19,19 @@ class WebDefinitionsViewController: UIViewController {
         view.backgroundColor = .white
         firebaseEvents = FirebaseEvents()
 
+        for i in stride(from: 0, to: WebDefinitions.values.count, by: 1) {
+            elements.append(WebDefinitions.values[i])
+            if (i != 0) && (i % 2 == 1) {
+                elements.append(nil)
+            }
+        }
+
         setupNavigationBar()
         setupView()
         addConstraints()
 
         //
-        adBannerView.load(GADRequest())
+//        adBannerView.load(GADRequest())
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -55,17 +63,26 @@ extension WebDefinitionsViewController: GADBannerViewDelegate {
 
 extension WebDefinitionsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return WebDefinitions.values.count
+        return elements.count
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let element: WebDefinitions? = elements[indexPath.row]
+
+        if element == nil {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "adCell", for: indexPath) as? BannerAdCollectionViewCell ?? BannerAdCollectionViewCell()
+            cell.bannerAd.rootViewController = self
+            cell.bannerAd.load(GADRequest())
+            return cell
+        }
+
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? WebDefinitionCollectionViewCell ?? WebDefinitionCollectionViewCell()
-        cell.refreshView(webDefinition: WebDefinitions.values[indexPath.row], word: word)
+        cell.refreshView(webDefinition: element!, word: word)
         return cell
     }
 
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width * 0.90, height: collectionView.frame.height - 64)
+        return CGSize(width: view.frame.width * 0.90, height: collectionView.frame.height - 16)
     }
 
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -77,7 +94,7 @@ extension WebDefinitionsViewController: UICollectionViewDelegate, UICollectionVi
     }
 
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 8, bottom: 32, right: 8)
+        return UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
     }
 }
 
@@ -109,7 +126,7 @@ extension WebDefinitionsViewController {
     }
 
     override func setupView() {
-        let layout = UICollectionViewFlowLayout()
+        let layout = SnappingCollectionViewLayout()
         layout.scrollDirection = .horizontal
 
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -117,27 +134,29 @@ extension WebDefinitionsViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(WebDefinitionCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(BannerAdCollectionViewCell.self, forCellWithReuseIdentifier: "adCell")
         collectionView.bounces = true
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.decelerationRate = UIScrollViewDecelerationRateFast
         view.addSubview(collectionView)
 
-        adBannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        adBannerView.adUnitID = Default.ADMOB_AD_UNIT_ID
-        adBannerView.delegate = self
-        adBannerView.rootViewController = self
-        view.addSubview(adBannerView)
+//        adBannerView = GADBannerView(adSize: kGADAdSizeBanner)
+//        adBannerView.adUnitID = Default.ADMOB_AD_UNIT_ID
+//        adBannerView.delegate = self
+//        adBannerView.rootViewController = self
+//        view.addSubview(adBannerView)
     }
 
     override func addConstraints() {
-        adBannerView.snp.makeConstraints { maker in
-            maker.left.right.bottom.equalToSuperview()
-            maker.height.equalTo(64)
-        }
+//        adBannerView.snp.makeConstraints { maker in
+//            maker.left.right.bottom.equalToSuperview()
+//            maker.height.equalTo(64)
+//        }
 
         collectionView.snp.makeConstraints { maker in
             maker.top.left.right.equalToSuperview()
-            maker.bottom.equalTo(adBannerView.snp.top)
+            maker.bottom.equalTo(view.layoutMarginsGuide.snp.bottom)
         }
     }
 }

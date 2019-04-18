@@ -16,5 +16,9 @@ public class FirebaseReference {
     public func getDocumentReferenceForWord(_ word: String) -> DocumentReference {
         return getDefinitionsCollectionReference().document(word)
     }
+    
+    public func getFeedBackCollectionReference() -> CollectionReference {
+        return firestore.collection(FirebaseKey.FEEDBACK)
+    }
 
 }

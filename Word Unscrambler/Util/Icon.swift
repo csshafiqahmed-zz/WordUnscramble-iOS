@@ -20,4 +20,5 @@ public struct Icon {
     public static let volume_24 = Icon.icon("baseline_volume_up_black_24pt")
     public static let internet_24 = Icon.icon("baseline_language_black_24pt")
     public static let back_24 = Icon.icon("round_arrow_back_white_24pt")
+    public static let info_24 = Icon.icon("baseline_info_white_24pt")
 }

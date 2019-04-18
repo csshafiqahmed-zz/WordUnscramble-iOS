@@ -2,12 +2,18 @@ import UIKit
 
 public class UnScrambler {
 
+    /// Singleton static variable
     private static var unscrambler: UnScrambler!
 
+    /// Set of all words from text file
     public private(set) var allWords = Set<String>()
+    /// Set of words with definitions in Firebase
     public private(set) var wordsWithDefinitions = Set<String>()
+    /// Set of words without definitions in Firebase
     public private(set) var wordsWithoutDefinitions = Set<String>()
+    /// Dictionary with each letter in the alphabet mapped to its appropriate scrabble score
     public private(set) var scrabbleCharacterPointsArray = [Character: Int]()
+    /// Dictionary of strings mapped to a list of valid words with the set of letters
     public private(set) var sortedWordsDictionary = [String: [String]]()
 
     private init() {
@@ -23,6 +29,9 @@ public class UnScrambler {
         return unscrambler
     }
 
+    /**
+        Loads words from the text files into the variables
+     */
     private func loadWordsFromFile() {
         guard let allWordsUrl = Bundle.main.url(forResource: Default.WORDS_FILE_NAME, withExtension: ".txt"),
                 let wordsWithDefinitionsUrl = Bundle.main.url(forResource: Default.WORDS_WITH_DEFINITIONS, withExtension: ".txt"),
@@ -43,6 +52,9 @@ public class UnScrambler {
         }
     }
 
+    /**
+        Creates the dictionary with each letter in the alphabet with its associated scrabble score
+     */
     private func setupScrabbleCharacterPointsArray() {
         let alphabetString = "abcdefghijklmnopqrstuvwxyz"
         var valueDict = [Int: [Character]]()
@@ -75,9 +87,9 @@ public class UnScrambler {
         }
     }
 
-    public func unscrambleWord(_ unscrambledWord: String) -> [Section] {
+    public func unscrambleWord(_ unscrambledWord: String) -> [TableViewSection] {
         let staredWordsController = StaredWordsController.getInstance()
-        var scrambledWords = [Section]()
+        var scrambledWords = [TableViewSection]()
         let sortedWord = String(cleanWord(unscrambledWord).sorted())
         // Iterate from 2 -> Length of unscrambledWord
         for i in stride(from: 2, through: unscrambledWord.count+1, by: 1) {
@@ -100,7 +112,7 @@ public class UnScrambler {
 
             // Add words to the section
             if words.count > 0 {
-                scrambledWords.append(Section(headerName: getFancySectionName(i), wordLength: i, words: words))
+                scrambledWords.append(TableViewSection(headerName: getFancySectionName(i), wordLength: i, words: words))
             }
         }
         return scrambledWords

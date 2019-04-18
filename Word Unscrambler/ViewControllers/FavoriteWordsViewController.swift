@@ -51,6 +51,11 @@ class FavoriteWordsViewController: UIViewController {
             viewController.modalTransitionStyle = .crossDissolve
             navigationController?.present(viewController, animated: true)
             firebaseEvents.logDefinitionClick()
+
+            viewController.onDoneBlock = {
+                self.words = self.staredWordsController.getListOfWordObjects()
+                self.tableView.reloadData()
+            }
         }
     }
 

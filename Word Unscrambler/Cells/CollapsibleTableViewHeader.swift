@@ -19,9 +19,7 @@ class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         super.init(reuseIdentifier: reuseIdentifier)
 
         contentView.backgroundColor = .white
-
         setupView()
-
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(CollapsibleTableViewHeader.tapHeader(_:))))
     }
 
@@ -59,10 +57,14 @@ class CollapsibleTableViewHeader: UITableViewHeaderFooterView {
         titleLabel.textAlignment = .center
         contentView.addSubview(titleLabel)
 
-        dividerView.backgroundColor = UIColor(hex: 0xbdbdbd)
+        dividerView.backgroundColor = .divider
         contentView.addSubview(dividerView)
     }
 
+    /**
+        Tap Gesture method that gets fired when tapped on the header cell.
+        Calls delegate method to either show or hide the section
+     */
     @objc func tapHeader(_ gestureRecognizer: UITapGestureRecognizer) {
         guard let cell = gestureRecognizer.view as? CollapsibleTableViewHeader else {
             return

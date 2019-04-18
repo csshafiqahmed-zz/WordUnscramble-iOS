@@ -8,7 +8,7 @@ class WebDefinitionCollectionViewCell: UICollectionViewCell {
     private var cardView: UIView!
     private var infoBar: UIView!
     public var title: UILabel!
-    public var image: UIImageView!
+//    public var image: UIImageView!
     public var webView: WKWebView!
 
     override init(frame: CGRect) {
@@ -27,7 +27,7 @@ class WebDefinitionCollectionViewCell: UICollectionViewCell {
         cardView.snp.makeConstraints { maker in
             maker.left.equalToSuperview().offset(16)
             maker.right.equalToSuperview().inset(16)
-            maker.top.equalToSuperview().offset(16)
+            maker.top.equalToSuperview().offset(24)
             maker.bottom.equalToSuperview().inset(16)
         }
 
@@ -37,17 +37,17 @@ class WebDefinitionCollectionViewCell: UICollectionViewCell {
         }
 
         title.snp.makeConstraints { maker in
-            maker.top.bottom.equalToSuperview()
-            maker.centerX.equalTo(infoBar.snp.centerX).offset(18)
-            maker.width.equalTo(title.intrinsicContentSize.width)
+            maker.top.bottom.left.right.equalToSuperview()
+//            maker.centerX.equalTo(infoBar.snp.centerX).offset(18)
+//            maker.width.equalTo(title.intrinsicContentSize.width)
         }
 
-        image.snp.makeConstraints { maker in
-            maker.top.equalToSuperview().offset(4)
-            maker.bottom.equalToSuperview().inset(4)
-            maker.right.equalTo(title.snp.left).offset(-4)
-            maker.width.equalTo(32)
-        }
+//        image.snp.makeConstraints { maker in
+//            maker.top.equalToSuperview().offset(4)
+//            maker.bottom.equalToSuperview().inset(4)
+//            maker.right.equalTo(title.snp.left).offset(-4)
+//            maker.width.equalTo(32)
+//        }
 
         webView.snp.makeConstraints { maker in
             maker.left.equalToSuperview().offset(1)
@@ -66,31 +66,36 @@ class WebDefinitionCollectionViewCell: UICollectionViewCell {
 
         infoBar = UIView()
         infoBar.backgroundColor = .app
-        infoBar.addShadow(cornerRadius: 0.25)
+        infoBar.addShadow(cornerRadius: 0)
         cardView.addSubview(infoBar)
 
         title = UILabel()
-        title.text = "Merriam-Webster"
         title.textColor = .white
         title.textAlignment = .center
         title.font = Font.AlegreyaSans.medium(with: 22)
         infoBar.addSubview(title)
 
-        image = UIImageView()
-        image.image = Icon.internet_24
-        image.tintColor = .white
-        image.contentMode = .scaleAspectFit
-        infoBar.addSubview(image)
+//        image = UIImageView()
+//        image.image = Icon.internet_24
+//        image.tintColor = .white
+//        image.contentMode = .scaleAspectFit
+//        infoBar.addSubview(image)
 
         webView = WKWebView()
         webView.scrollView.bounces = false
-        webView.load(URLRequest(url: URL(string: "https://www.google.com")!))
+        webView.navigationDelegate = self
         cardView.addSubview(webView)
     }
 
     public func refreshView(webDefinition: WebDefinitions, word: String) {
         title.text = webDefinition.title
-        image.image = webDefinition.image
+//        image.image = webDefinition.image
         webView.load(URLRequest(url: URL(string: "\(webDefinition.url)\(word)")!))
+    }
+}
+
+extension WebDefinitionCollectionViewCell: WKNavigationDelegate {
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("finished loading webview")
     }
 }
