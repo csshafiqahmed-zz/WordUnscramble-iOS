@@ -30,7 +30,7 @@ class BannerAdCollectionViewCell: UICollectionViewCell {
         cardView.snp.makeConstraints { maker in
             maker.left.equalToSuperview().offset(16)
             maker.right.equalToSuperview().inset(16)
-            maker.top.equalToSuperview().offset(24)
+            maker.top.equalToSuperview().offset(16)
             maker.bottom.equalToSuperview().inset(16)
         }
 

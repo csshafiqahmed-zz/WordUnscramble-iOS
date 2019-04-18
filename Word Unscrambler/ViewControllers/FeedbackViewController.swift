@@ -12,6 +12,9 @@ class FeedbackViewController: UIViewController {
     private var messageTextView: UITextView!
     private var submitButton: UIButton!
 
+    // MARK: Attributes
+    private var defaultViewOriginPoint: CGPoint = CGPoint.zero
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +29,24 @@ class FeedbackViewController: UIViewController {
         tap.numberOfTouchesRequired = 1
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        defaultViewOriginPoint = view.frame.origin
+
+        // adding observers for keyboard notification change
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_ :)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_ :)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // removing keyboard notification change observers
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -55,12 +76,51 @@ class FeedbackViewController: UIViewController {
             view.endEditing(true)
         }
     }
+
+    /// UIKeyboardWillShow action. Makes the view scrollable if the TextFields are hidden under the keyboard.
+    @objc private func keyboardWillShow(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let frame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+
+        adjustViewOffset()
+    }
+
+    private func adjustViewOffset() {
+        UIView.animate(withDuration: 0.2) {
+            if self.messageTextView.isFirstResponder {
+                self.view.frame.origin = CGPoint(x: 0, y: (-self.messageLabel.frame.minX - self.defaultViewOriginPoint.y))
+            } else {
+                self.view.frame.origin = self.defaultViewOriginPoint
+            }
+        }
+    }
+
+    /// UIKeyboardWillHide action. Removes the contentInset for the scrollView.
+    @objc private func keyboardWillHide(_ notification: Notification) {
+        UIView.animate(withDuration: 0.2) {
+            self.view.frame.origin = self.defaultViewOriginPoint
+        }
+    }
 }
 
 extension FeedbackViewController: UITextViewDelegate, UITextFieldDelegate {
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        messageTextView.becomeFirstResponder()
+        if textField == nameTextField {
+            emailTextField.becomeFirstResponder()
+        } else {
+            messageTextView.becomeFirstResponder()
+        }
         return false
+    }
+
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        adjustViewOffset()
+    }
+
+    public func textViewDidBeginEditing(_ textView: UITextView) {
+        adjustViewOffset()
     }
 
     public func textViewDidChange(_ textView: UITextView) {
@@ -111,6 +171,7 @@ extension FeedbackViewController {
         view.addSubview(nameLabel)
 
         nameTextField = TextField()
+        nameTextField.delegate = self
         nameTextField.placeholder = "Enter you name"
         nameTextField.textColor = .app
         nameTextField.font = Font.AlegreyaSans.medium(with: 24)
@@ -129,6 +190,7 @@ extension FeedbackViewController {
         view.addSubview(emailLabel)
 
         emailTextField = TextField()
+        emailTextField.delegate = self
         emailTextField.placeholder = "Enter your email"
         emailTextField.textColor = .app
         emailTextField.font = Font.AlegreyaSans.medium(with: 24)

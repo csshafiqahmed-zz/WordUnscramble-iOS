@@ -27,7 +27,7 @@ class WebDefinitionCollectionViewCell: UICollectionViewCell {
         cardView.snp.makeConstraints { maker in
             maker.left.equalToSuperview().offset(16)
             maker.right.equalToSuperview().inset(16)
-            maker.top.equalToSuperview().offset(24)
+            maker.top.equalToSuperview().offset(16)
             maker.bottom.equalToSuperview().inset(16)
         }
 
@@ -96,6 +96,6 @@ class WebDefinitionCollectionViewCell: UICollectionViewCell {
 
 extension WebDefinitionCollectionViewCell: WKNavigationDelegate {
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        print("finished loading webview")
+        // TODO: Loading spinner while loading
     }
 }

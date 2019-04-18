@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6441f43b-4b4b-412a-a7e7-0e0de73d2ba1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Word Unscrambler/Type/TableViewSection.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/xcuserdata/SatishBoggarapu.xcuserdatad/xcschemes/Word Unscrambler.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler.xcodeproj/xcuserdata/SatishBoggarapu.xcuserdatad/xcschemes/Word Unscrambler.xcscheme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Word Unscrambler.xcworkspace/xcuserdata/satishboggarapu.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler.xcworkspace/xcuserdata/satishboggarapu.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Cells/CollapsibleTableViewHeader.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Cells/CollapsibleTableViewHeader.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Cells/DefinitionTableViewCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Cells/DefinitionTableViewCell.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Cells/WebDefinitionCollectionViewCell.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Cells/WebDefinitionCollectionViewCell.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Firebase/DefinitionCacheController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Firebase/DefinitionCacheController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Firebase/FIrebaseFetch.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Firebase/FIrebaseFetch.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Firebase/FirebaseEvents.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Firebase/FirebaseEvents.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Firebase/FirebaseKey.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Firebase/FirebaseKey.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Firebase/FirebaseReference.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Firebase/FirebaseReference.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Type/FetchDefinition.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Type/FirebaseWord.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Type/FirebaseWord.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Type/Section.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Type/StaredWordsController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Type/StaredWordsController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Type/UnScrambler.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Util/Color.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Util/Color.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Util/Default.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Util/Default.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Util/Icon.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/Util/Message.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/Util/Message.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/DefinitionViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FavoriteWordsViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/MainViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/WebDefinitionsViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/WebDefinitionsViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FeedbackViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Word Unscrambler/ViewControllers/FeedbackViewController.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Word_Unscrambler-haqyplpgynzwvxeaoxdbhjmchdji/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,9 +14,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6A483559-FC35-4A80-B8BC-F8B64239B141" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_b46fcacc32935373140fdee3ad940153c5887f82" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48756906">
+    <splitter split-orientation="horizontal" split-proportion="0.11423307">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -71,8 +49,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Word Unscrambler/Firebase/FIrebaseFetch.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="47" />
+                <state relative-caret-position="504">
+                  <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -93,10 +71,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/FeedbackViewController.swift">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="328">
-                  <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+                <state relative-caret-position="467">
+                  <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
                   <folding>
+                    <element signature="e#1078#1356#0" />
                     <element signature="e#255#1515#0" />
+                    <element signature="e#255#314#0" />
+                    <element signature="e#303#372#0" />
                   </folding>
                 </state>
               </provider>
@@ -309,6 +290,9 @@
   </component>
   <component name="RunManager">
     <configuration name="Word Unscrambler" type="AppleRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-noFIRAnalyticsDebugEnabled" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Word Unscrambler" TARGET_NAME="Word Unscrambler" CONFIG_NAME="Debug" SCHEME_NAME="Word Unscrambler" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="Word Unscrambler" RUN_TARGET_NAME="Word Unscrambler" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <envs>
+        <env name="OS_ACTIVITY_MODE" value="disable" />
+      </envs>
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -349,12 +333,12 @@
       <workItem from="1555334525952" duration="7878000" />
       <workItem from="1555418917468" duration="16279000" />
       <workItem from="1555501256771" duration="13488000" />
-      <workItem from="1555521006162" duration="14673000" />
+      <workItem from="1555521006162" duration="17145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206221000" />
+    <option name="totallyTimeSpent" value="208693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-150" width="2560" height="1417" extended-state="6" />
@@ -366,7 +350,7 @@
       <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.13741064" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21056604" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21056604" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22339623" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -374,7 +358,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981133" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.30867925" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.30867925" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -784,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Firebase/FIrebaseFetch.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Word Unscrambler/Firebase/FirebasePush.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -798,12 +775,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Word Unscrambler/Firebase/FIrebaseFetch.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Word Unscrambler/ViewControllers/FeedbackViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="467">
+          <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
           <folding>
+            <element signature="e#1078#1356#0" />
             <element signature="e#255#1515#0" />
+            <element signature="e#255#314#0" />
+            <element signature="e#303#372#0" />
           </folding>
         </state>
       </provider>
